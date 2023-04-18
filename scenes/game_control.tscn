@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbd0qixmnbtuk"]
+
+[ext_resource type="Script" path="res://scripts/g.gd" id="1_8nlyq"]
+[ext_resource type="Resource" uid="uid://b30he87mxp3wg" path="res://resources/data_resources/0.tres" id="2_ta870"]
+
+[node name="game_control" type="Node"]
+script = ExtResource("1_8nlyq")
+array = Array[Resource]([ExtResource("2_ta870")])

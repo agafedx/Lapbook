@@ -1,0 +1,9 @@
+2a60927148abd1d33b818b535e306557
+::res://::1681807678
+icon.svg::CompressedTexture2D::4538503899277721980::1681804106::1681804116::1::::<><>::
+::res://resources/::1681807806
+::res://resources/data_resources/::1681807862
+0.tres::Resource/DataResource::4403751694815366602::1681807862::0::1::::<><>::res://scripts/data_resource.gd<>uid://b5wqq4sgiqxgu
+::res://scripts/::1681809429
+data_resource.gd::GDScript::-1::1681807902::0::1::::DataResource<>Resource<>::
+g.gd::GDScript::-1::1681809810::0::1::::<>Node<>::

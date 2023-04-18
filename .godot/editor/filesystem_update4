@@ -1,0 +1,5 @@
+res://scripts/data_resource.gd
+res://scripts/g.gd
+res://resources/data_resources/0.tres
+res://scenes/main_menu.tscn
+res://scenes/game_control.tscn
