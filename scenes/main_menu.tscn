@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bt3b5xm64kc7v"]
+[gd_scene load_steps=2 format=3 uid="uid://bt3b5xm64kc7v"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_5yqxo"]
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -7,3 +9,69 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_5yqxo")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -29.0
+offset_top = 99.0
+offset_right = 29.0
+offset_bottom = 125.0
+grow_horizontal = 2
+text = "Лэпбук
+\"Знай свою историю\""
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 221.0
+offset_right = 639.0
+offset_bottom = 252.0
+text = "ИСТОРИЯ"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -40.0
+offset_right = 38.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "ЗАДАНИЯ"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = 39.0
+offset_right = 55.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "НАСТРОЙКИ"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

@@ -1,1 +1,13 @@
+TextureRect
+RichTextLabel
+Label
+AnimationTree
+ColorRect
+Button
+Panel
+AnimationPlayer
+Camera3D
+CSGTorus3D
+SubViewport
+SubViewportContainer
 Node

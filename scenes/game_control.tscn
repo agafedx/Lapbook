@@ -1,8 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbd0qixmnbtuk"]
+[gd_scene load_steps=5 format=3 uid="uid://dbd0qixmnbtuk"]
 
 [ext_resource type="Script" path="res://scripts/g.gd" id="1_8nlyq"]
 [ext_resource type="Resource" uid="uid://b30he87mxp3wg" path="res://resources/data_resources/0.tres" id="2_ta870"]
+[ext_resource type="Resource" uid="uid://ep738yopjos5" path="res://resources/data_resources/1.tres" id="3_1p3ia"]
+[ext_resource type="Resource" uid="uid://c78su42bqbl4o" path="res://resources/data_resources/2.tres" id="4_vmg2t"]
 
 [node name="game_control" type="Node"]
 script = ExtResource("1_8nlyq")
-array = Array[Resource]([ExtResource("2_ta870")])
+array = Array[Resource]([ExtResource("2_ta870"), ExtResource("3_1p3ia"), ExtResource("4_vmg2t")])
