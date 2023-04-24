@@ -83,14 +83,16 @@ grow_vertical = 2
 text = "5"
 
 [node name="Label" type="Label" parent="."]
-offset_left = 394.0
-offset_top = 42.0
-offset_right = 731.0
-offset_bottom = 90.0
-text = "Выберите кроссворд"
+layout_mode = 0
+offset_left = 443.0
+offset_top = 41.0
+offset_right = 677.0
+offset_bottom = 89.0
+text = "Выберите тест"
 label_settings = SubResource("LabelSettings_xy2qp")
 
 [node name="main" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1002.0
 offset_top = 568.0
 offset_right = 1105.0

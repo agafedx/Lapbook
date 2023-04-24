@@ -1,7 +1,8 @@
 2a60927148abd1d33b818b535e306557
-::res://::1682346842
+::res://::1682349549
+export_presets.cfg::TextFile::-1::1682346934::0::1::::<><>::
 icon.svg::CompressedTexture2D::4538503899277721980::1681804106::1681804116::1::::<><>::
-::res://assets/::1682345343
+::res://assets/::1682349658
 3C3KkjJl0WI.jpg::CompressedTexture2D::286865148342995312::1682336761::1682336796::1::::<><>::
 aEztaTMmDyM.jpg::CompressedTexture2D::3328802314929907572::1682336781::1682336796::1::::<><>::
 CuJ1Y_UdvGc.jpg::CompressedTexture2D::8882286622670456138::1682336742::1682336796::1::::<><>::
@@ -35,25 +36,13 @@ wGnVMsom9Lc.jpg::CompressedTexture2D::4692618411338982479::1682336752::168233679
 3.tres::Resource/Resource::5710019099434725959::1682339298::0::1::::<><>::res://scripts/files.gd
 4.tres::Resource/Resource::7358387171836334616::1682338603::0::1::::<><>::res://scripts/files.gd
 5.tres::Resource/Resource::1660352230241106918::1682338603::0::1::::<><>::res://scripts/files.gd
-::res://resources/files/res/::1682343382
+::res://resources/files/res/::1682349488
 11.csv::::-1::0::0::0::::<><>::
 12.csv::::-1::0::0::0::::<><>::
-13. ведших совместное хоз¤йство.translation::OptimizedTranslation::5559674079924872018::1682338282::0::1::::<><>::
-13. ведших совместное хозяйство.translation::OptimizedTranslation::188371855978008223::1682340936::0::1::::<><>::
-13. имевших родственные св¤зи.translation::OptimizedTranslation::8869578846782354089::1682338282::0::1::::<><>::
-13. имевших родственные связи.translation::OptimizedTranslation::1843681755466321359::1682340936::0::1::::<><>::
-13. называют Е..translation::OptimizedTranslation::476253397341076110::1682338282::0::1::::<><>::
-13. называют....translation::OptimizedTranslation::6069539769942435849::1682340936::0::1::::<><>::
-13. проживавших на определЄнной территории.translation::OptimizedTranslation::194766955387608148::1682338282::0::1::::<><>::
-13. проживавших на определенной территории.translation::OptimizedTranslation::8501559450336318371::1682340936::0::1::::<><>::
-13.csv::Translation::8298710255092661333::1682340914::1682340936::1::::<><>::
+13.csv::Translation::5407835610678420795::1682349395::1682349442::1::::<><>::
 21.csv::::-1::0::0::0::::<><>::
 22.csv::::-1::0::0::0::::<><>::
-23. затем Беларуси.translation::OptimizedTranslation::6614593798570878393::1682338282::0::1::::<><>::
-23. Литвы.translation::OptimizedTranslation::355168794331298360::1682340745::0::1::::<><>::
-23. Украины.translation::OptimizedTranslation::2224125109451615915::1682340745::0::1::::<><>::
 23.csv::::-1::0::0::1::::<><>::
-23.Беларуси.translation::OptimizedTranslation::6471008396996054090::1682340745::0::1::::<><>::
 31.csv::::-1::0::0::0::::<><>::
 32.csv::::-1::0::0::0::::<><>::
 33.csv::::-1::0::0::0::::<><>::
@@ -62,9 +51,7 @@ wGnVMsom9Lc.jpg::CompressedTexture2D::4692618411338982479::1682336752::168233679
 43.csv::::-1::0::0::0::::<><>::
 51.csv::::-1::0::0::0::::<><>::
 52.csv::::-1::0::0::0::::<><>::
-53.                .translation::OptimizedTranslation::6398352756094807200::1682338568::0::1::::<><>::
-53. передающимися по наследству.translation::OptimizedTranslation::6183347357053389001::1682338598::0::1::::<><>::
-53.csv::Translation::4302513113542429890::1682338596::1682338598::1::::<><>::
+53.csv::Translation::591518087112198682::1682338596::1682349264::1::::<><>::
 ::res://resources/rebuses/::1682341371
 1.tres::Resource/Resource::8568212796854411759::1682341075::0::1::::<><>::res://scripts/rebus_data.gd<>uid://ec7vk523knvc
 2.tres::Resource/Resource::7973157528512761416::1682341105::0::1::::<><>::res://scripts/rebus_data.gd<>uid://bnoq5gjodrvku
@@ -113,16 +100,16 @@ wGnVMsom9Lc.jpg::CompressedTexture2D::4692618411338982479::1682336752::168233679
 3.tres::Resource/Resource::999241059014391017::1682342633::0::1::::<><>::res://scripts/test_complete.gd<>uid://be8pxb2xabr1b<>uid://of4ku3ra8g2n<>uid://bextbumtdibx6<>uid://b7a00x8cackux<>uid://nvi24b6vm305
 4.tres::Resource/Resource::3979801211824994441::1682342633::0::1::::<><>::res://scripts/test_complete.gd<>uid://cti81o465d0ay<>uid://bum6k4ann4rmt<>uid://c27cuxf2lu287<>uid://dpwy25a3jwq1l<>uid://ccvex856rhku3
 5.tres::Resource/Resource::3848400914239889192::1682342633::0::1::::<><>::res://scripts/test_complete.gd<>uid://c1ewxqub4qoo8<>uid://cx2a1opq5mq6e<>uid://vj0an34w6tq4<>uid://vnobebb3y53n<>uid://c5o3rvi7tysts
-::res://scenes/::1682346810
+::res://scenes/::1682349493
 game_control.tscn::PackedScene::7237190981781116950::1682346776::0::1::::<><>::res://scripts/g.gd<>uid://b30he87mxp3wg<>uid://ep738yopjos5<>uid://c78su42bqbl4o<>uid://dgy03ntanwjrr<>uid://68xu82tntaxm<>uid://ydgdrm80v53k<>uid://44epa8co0x8v<>uid://ducrhifdsugst<>uid://bvvervc87wvfx<>uid://cnl8gepoy2xat<>uid://dc3ptdi7g4wlc<>uid://xwj02abn7gc1<>uid://dlui0e8knmg1m<>uid://kbnt0r245qpc<>uid://dv864xtokenkf<>uid://bn7le8ovwtafn<>uid://bmy0doqeja0an<>uid://dsdoq48gk1wat<>uid://0wq0qgwvw2i5<>uid://b32ms4ib7l047<>uid://46goadmudkxf<>uid://5uqp7pxsm8wc<>uid://oibmbrqnl7pd<>uid://bwx30kv6r3krp<>uid://bu3guor2q13yy
 letter.tscn::PackedScene::8691729722560284332::1682277112::0::1::::<><>::res://scripts/letter.gd
 main_menu.tscn::PackedScene::3777926808761658077::1682346776::0::1::::<><>::res://scripts/main_menu.gd<>uid://dsl4mp3p4b8qp<>uid://c2qfot2n6n2c1<>uid://dbienm4gayg02<>uid://bx7s1xfu75my6<>uid://demrowxsiwscs<>uid://btk0bukt3opoh<>uid://dmn0nq8wacr3t<>uid://ckt8tugs4bjrb
 page.tscn::PackedScene::7916505878353730217::1682345757::0::1::::<><>::res://scripts/page.gd
-page_manager.tscn::PackedScene::5026226194299410174::1682346810::0::1::::<><>::res://scripts/page_manager.gd<>uid://21mi4bggt8cq<>uid://gweo2jooj8wq<>uid://brp863ih0itbo<>uid://bh4ykth87k1jp<>uid://bhdqxp4d4wdqu
-rebus.tscn::PackedScene::1491084500891909920::1682344430::0::1::::<><>::res://scripts/rebus.gd
-rebus_manager.tscn::PackedScene::8613107973627842343::1682346810::0::1::::<><>::res://scripts/rebus_manager.gd<>uid://ce4ka71w2j7ik<>uid://bx5ekr1i0uqpa<>uid://cis53s671ey6l<>uid://sq3dgg03vpkt<>uid://bkuo1rctdx755<>uid://bpx0enhw7bdyv<>uid://dehb7mrqmxyjq<>uid://dtr0plyrqn3qm<>uid://dsmuwpmstb5qc<>uid://deol455finevp
-test.tscn::PackedScene::1507888143292647261::1682342469::0::1::::<><>::res://scripts/test.gd
-test_manager.tscn::PackedScene::2413626869958175535::1682333722::0::1::::<><>::res://scripts/test_manager.gd
+page_manager.tscn::PackedScene::5026226194299410174::1682349492::0::1::::<><>::res://scripts/page_manager.gd<>uid://21mi4bggt8cq<>uid://gweo2jooj8wq<>uid://brp863ih0itbo<>uid://bh4ykth87k1jp<>uid://bhdqxp4d4wdqu
+rebus.tscn::PackedScene::1491084500891909920::1682349493::0::1::::<><>::res://scripts/rebus.gd
+rebus_manager.tscn::PackedScene::8613107973627842343::1682349493::0::1::::<><>::res://scripts/rebus_manager.gd<>uid://ce4ka71w2j7ik<>uid://bx5ekr1i0uqpa<>uid://cis53s671ey6l<>uid://sq3dgg03vpkt<>uid://bkuo1rctdx755<>uid://bpx0enhw7bdyv<>uid://dehb7mrqmxyjq<>uid://dtr0plyrqn3qm<>uid://dsmuwpmstb5qc<>uid://deol455finevp
+test.tscn::PackedScene::1507888143292647261::1682349493::0::1::::<><>::res://scripts/test.gd
+test_manager.tscn::PackedScene::2413626869958175535::1682349493::0::1::::<><>::res://scripts/test_manager.gd
 test_question.tscn::PackedScene::1565754547322658915::1682343222::0::1::::<><>::res://scripts/test_question.gd
 xword.tscn::PackedScene::2118158956728767226::1682344430::0::1::::<><>::res://scripts/xword.gd
 xword_manager.tscn::PackedScene::4120954923888307720::1682340979::0::1::::<><>::res://scripts/xword_manager.gd
