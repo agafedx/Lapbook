@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://c1ewxqub4qoo8"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_nyxeb"]
+
+[resource]
+script = ExtResource("1_nyxeb")
+text = "В каком году войска великого князя литовского Трайдена под крепостью Керново разгромили армию великого магистра Эрнеста?"
+answer = "1279"

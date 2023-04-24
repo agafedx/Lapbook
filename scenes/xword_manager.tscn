@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://byyhr4q62qlvc"]
+[gd_scene load_steps=3 format=3 uid="uid://byyhr4q62qlvc"]
 
 [ext_resource type="Script" path="res://scripts/xword_manager.gd" id="1_06tm1"]
-[ext_resource type="Resource" uid="uid://68xu82tntaxm" path="res://resources/files/1.tres" id="2_nvbp7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yb3q4"]
 font_size = 32
@@ -14,7 +13,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_06tm1")
-files = Array[Resource]([ExtResource("2_nvbp7"), ExtResource("2_nvbp7"), ExtResource("2_nvbp7"), ExtResource("2_nvbp7"), ExtResource("2_nvbp7")])
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -94,6 +92,7 @@ text = "Выберите кроссворд"
 label_settings = SubResource("LabelSettings_yb3q4")
 
 [node name="main" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1002.0
 offset_top = 568.0
 offset_right = 1105.0

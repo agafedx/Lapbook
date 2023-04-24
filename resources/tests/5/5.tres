@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://c5o3rvi7tysts"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_cn6kh"]
+
+[resource]
+script = ExtResource("1_cn6kh")
+text = "В каком году князь Витовт после двухмесячной осады захватил Смоленск и включил его в состав Великого княжества Литовского?"
+answer = "1404"

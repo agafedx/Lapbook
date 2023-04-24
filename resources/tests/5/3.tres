@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://vj0an34w6tq4"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_8n1vg"]
+
+[resource]
+script = ExtResource("1_8n1vg")
+text = "В каком веке полоцкие князья начали пользоваться печатью с гербом \"Погоня\", ставшим впоследствии гербом Великого княжества Литовского?"
+answer = "начало XIV в."

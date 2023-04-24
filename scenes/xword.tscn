@@ -72,15 +72,11 @@ unresizable = false
 borderless = false
 content_scale_mode = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="PopupPanel"]
+[node name="Label" type="RichTextLabel" parent="PopupPanel"]
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 496.0
 offset_bottom = 496.0
-horizontal_scroll_mode = 0
-
-[node name="Label" type="Label" parent="PopupPanel/ScrollContainer"]
-layout_mode = 2
 
 [node name="main" type="Button" parent="."]
 layout_mode = 0

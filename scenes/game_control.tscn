@@ -1,15 +1,35 @@
-[gd_scene load_steps=8 format=3 uid="uid://dbd0qixmnbtuk"]
+[gd_scene load_steps=27 format=3 uid="uid://dbd0qixmnbtuk"]
 
 [ext_resource type="Script" path="res://scripts/g.gd" id="1_8nlyq"]
 [ext_resource type="Resource" uid="uid://b30he87mxp3wg" path="res://resources/data_resources/0.tres" id="2_ta870"]
 [ext_resource type="Resource" uid="uid://ep738yopjos5" path="res://resources/data_resources/1.tres" id="3_1p3ia"]
 [ext_resource type="Resource" uid="uid://c78su42bqbl4o" path="res://resources/data_resources/2.tres" id="4_vmg2t"]
+[ext_resource type="Resource" uid="uid://dgy03ntanwjrr" path="res://resources/data_resources/3.tres" id="5_3tr1f"]
 [ext_resource type="Resource" uid="uid://68xu82tntaxm" path="res://resources/files/1.tres" id="5_v10gh"]
 [ext_resource type="Resource" uid="uid://ydgdrm80v53k" path="res://resources/files/2.tres" id="6_iy5uq"]
+[ext_resource type="Resource" uid="uid://44epa8co0x8v" path="res://resources/data_resources/4.tres" id="6_xrg7a"]
 [ext_resource type="Resource" uid="uid://ducrhifdsugst" path="res://resources/rebuses/1.tres" id="7_yy3a7"]
+[ext_resource type="Resource" uid="uid://bvvervc87wvfx" path="res://resources/tests/complete/1.tres" id="8_r6mv6"]
+[ext_resource type="Resource" uid="uid://cnl8gepoy2xat" path="res://resources/files/3.tres" id="9_40l15"]
+[ext_resource type="Resource" uid="uid://dc3ptdi7g4wlc" path="res://resources/files/4.tres" id="10_c1v2h"]
+[ext_resource type="Resource" uid="uid://xwj02abn7gc1" path="res://resources/files/5.tres" id="11_tu3nc"]
+[ext_resource type="Resource" uid="uid://dlui0e8knmg1m" path="res://resources/rebuses/2.tres" id="11_y7rt8"]
+[ext_resource type="Resource" uid="uid://kbnt0r245qpc" path="res://resources/rebuses/3.tres" id="12_q53uv"]
+[ext_resource type="Resource" uid="uid://dv864xtokenkf" path="res://resources/rebuses/4.tres" id="13_s5doi"]
+[ext_resource type="Resource" uid="uid://bn7le8ovwtafn" path="res://resources/rebuses/5.tres" id="14_fqtry"]
+[ext_resource type="Resource" uid="uid://bmy0doqeja0an" path="res://resources/rebuses/6.tres" id="15_60oec"]
+[ext_resource type="Resource" uid="uid://dsdoq48gk1wat" path="res://resources/rebuses/7.tres" id="16_6wrhq"]
+[ext_resource type="Resource" uid="uid://0wq0qgwvw2i5" path="res://resources/rebuses/8.tres" id="17_eq3x6"]
+[ext_resource type="Resource" uid="uid://b32ms4ib7l047" path="res://resources/rebuses/9.tres" id="18_3d7qs"]
+[ext_resource type="Resource" uid="uid://46goadmudkxf" path="res://resources/rebuses/10.tres" id="19_2neia"]
+[ext_resource type="Resource" uid="uid://5uqp7pxsm8wc" path="res://resources/tests/complete/2.tres" id="21_gt2p5"]
+[ext_resource type="Resource" uid="uid://oibmbrqnl7pd" path="res://resources/tests/complete/3.tres" id="22_toflw"]
+[ext_resource type="Resource" uid="uid://bwx30kv6r3krp" path="res://resources/tests/complete/4.tres" id="23_ylvtb"]
+[ext_resource type="Resource" uid="uid://bu3guor2q13yy" path="res://resources/tests/complete/5.tres" id="24_jwui6"]
 
 [node name="game_control" type="Node"]
 script = ExtResource("1_8nlyq")
-array = Array[Resource]([ExtResource("2_ta870"), ExtResource("3_1p3ia"), ExtResource("4_vmg2t")])
-files = Array[Resource]([ExtResource("5_v10gh"), ExtResource("6_iy5uq"), null, null, null])
-rebus = Array[Resource]([ExtResource("7_yy3a7"), ExtResource("7_yy3a7"), ExtResource("7_yy3a7"), ExtResource("7_yy3a7"), ExtResource("7_yy3a7")])
+array = Array[Resource]([ExtResource("2_ta870"), ExtResource("3_1p3ia"), ExtResource("4_vmg2t"), ExtResource("5_3tr1f"), ExtResource("6_xrg7a")])
+files = Array[Resource]([ExtResource("5_v10gh"), ExtResource("6_iy5uq"), ExtResource("9_40l15"), ExtResource("10_c1v2h"), ExtResource("11_tu3nc")])
+rebus = Array[Resource]([ExtResource("7_yy3a7"), ExtResource("11_y7rt8"), ExtResource("12_q53uv"), ExtResource("13_s5doi"), ExtResource("14_fqtry"), ExtResource("15_60oec"), ExtResource("16_6wrhq"), ExtResource("17_eq3x6"), ExtResource("18_3d7qs"), ExtResource("19_2neia")])
+tests = Array[Resource]([ExtResource("8_r6mv6"), ExtResource("21_gt2p5"), ExtResource("22_toflw"), ExtResource("23_ylvtb"), ExtResource("24_jwui6")])

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://6f7652xf0fwj"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_wvwk1"]
+
+[resource]
+script = ExtResource("1_wvwk1")
+text = "В каком году была заключена Городельская уния - союз Великого княжества Литовского с Польским королевством?"
+answer = "1413"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="RebusData" load_steps=3 format=3 uid="uid://dsdoq48gk1wat"]
+
+[ext_resource type="Script" path="res://scripts/rebus_data.gd" id="1_v4hbf"]
+[ext_resource type="Texture2D" uid="uid://bw74ytq6fb71o" path="res://assets/oaDP2zhH4Lw.jpg" id="2_ljtcd"]
+
+[resource]
+script = ExtResource("1_v4hbf")
+texture = ExtResource("2_ljtcd")
+text = "государь"

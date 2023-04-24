@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TestComplete" load_steps=7 format=3 uid="uid://bwx30kv6r3krp"]
+
+[ext_resource type="Script" path="res://scripts/test_complete.gd" id="1_pli4t"]
+[ext_resource type="Resource" uid="uid://cti81o465d0ay" path="res://resources/tests/4/1.tres" id="2_himjo"]
+[ext_resource type="Resource" uid="uid://bum6k4ann4rmt" path="res://resources/tests/4/2.tres" id="3_rhssp"]
+[ext_resource type="Resource" uid="uid://c27cuxf2lu287" path="res://resources/tests/4/3.tres" id="4_brfbo"]
+[ext_resource type="Resource" uid="uid://dpwy25a3jwq1l" path="res://resources/tests/4/4.tres" id="5_rcuvh"]
+[ext_resource type="Resource" uid="uid://ccvex856rhku3" path="res://resources/tests/4/5.tres" id="6_t50c7"]
+
+[resource]
+script = ExtResource("1_pli4t")
+test = Array[Resource]([ExtResource("2_himjo"), ExtResource("3_rhssp"), ExtResource("4_brfbo"), ExtResource("5_rcuvh"), ExtResource("6_t50c7")])

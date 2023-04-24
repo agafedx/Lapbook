@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://vij7deigdiea"]
+[gd_scene load_steps=7 format=3 uid="uid://vij7deigdiea"]
 
 [ext_resource type="Script" path="res://scripts/rebus.gd" id="1_rmkyc"]
 
@@ -54,22 +54,28 @@ _data = {
 "next": SubResource("Animation_31bkd")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_3lxyy"]
+font_size = 30
+outline_size = 2
+
 [node name="rebus" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 4608.0
-offset_bottom = 2592.0
+offset_right = 55.0
+offset_bottom = 71.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rmkyc")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = -1
+anchor_right = 0.964
+anchor_bottom = 0.908
+offset_right = -0.548096
+offset_bottom = 0.147949
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -117,6 +123,14 @@ offset_top = 568.0
 offset_right = 1105.0
 offset_bottom = 599.0
 text = "На главную"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 571.0
+offset_right = 139.0
+offset_bottom = 594.0
+label_settings = SubResource("LabelSettings_3lxyy")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

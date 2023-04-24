@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="RebusData" load_steps=3 format=3 uid="uid://46goadmudkxf"]
+
+[ext_resource type="Script" path="res://scripts/rebus_data.gd" id="1_rsjli"]
+[ext_resource type="Texture2D" uid="uid://b74e0faumxu5l" path="res://assets/wGnVMsom9Lc.jpg" id="2_j3c16"]
+
+[resource]
+script = ExtResource("1_rsjli")
+texture = ExtResource("2_j3c16")
+text = "ягайло"

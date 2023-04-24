@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://bum6k4ann4rmt"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_uaawu"]
+
+[resource]
+script = ExtResource("1_uaawu")
+text = "Сколько воеводств входило в XV веке в состав Великого княжества Литовского?"
+answer = "6"

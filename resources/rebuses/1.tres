@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="RebusData" load_steps=3 format=3 uid="uid://ducrhifdsugst"]
 
 [ext_resource type="Script" path="res://scripts/rebus_data.gd" id="1_3epnq"]
-[ext_resource type="Texture2D" uid="uid://b5wqq4sgiqxgu" path="res://icon.svg" id="2_7jrdr"]
+[ext_resource type="Texture2D" uid="uid://ec7vk523knvc" path="res://assets/3C3KkjJl0WI.jpg" id="2_ktcij"]
 
 [resource]
 script = ExtResource("1_3epnq")
-texture = ExtResource("2_7jrdr")
-text = "история"
+texture = ExtResource("2_ktcij")
+text = "народность"

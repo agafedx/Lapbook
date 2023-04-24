@@ -11,12 +11,12 @@ var n : int = 0
 
 func _ready():
 	files = GameControl.files[GameControl.current_xw]
-	crossword.columns = crossword_size
+	crossword.columns = GameControl.crossword_size
 	read_xword()
 	read_answers()
 	read_qustions()
 	for i in qst:
-		$PopupPanel/ScrollContainer/Label.text += i + "\n"
+		$PopupPanel/Label.text += i + "\n"
 	print(xw)
 	print(ans)
 	print(qst)

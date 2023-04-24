@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_imp5u")
-file = "res://resources/files/res/1_xw.csv"
-answers = "res://resources/files/res/1_ans.csv"
-questions = "res://resources/files/res/1_qst.csv"
+file = "res://resources/files/res/12.csv"
+answers = "res://resources/files/res/11.csv"
+questions = "res://resources/files/res/13.csv"

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://batrrd8gq0mob"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_g1mqx"]
+
+[resource]
+script = ExtResource("1_g1mqx")
+text = "В каком году в БССР был создан штаб политической оппозиции - Белорусский народный фронт \"Адраджэнне\"?"
+answer = "1989"

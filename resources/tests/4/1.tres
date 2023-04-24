@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://cti81o465d0ay"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_imply"]
+
+[resource]
+script = ExtResource("1_imply")
+text = "Как назывался законодательный акт Т. Костюшко, согласно которому крестьяне получали личную свободу (без наделения земельной собственностью)?"
+answer = "Полонецкий универсал"

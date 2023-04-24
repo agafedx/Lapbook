@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="RebusData" load_steps=3 format=3 uid="uid://kbnt0r245qpc"]
+
+[ext_resource type="Script" path="res://scripts/rebus_data.gd" id="1_ld6ni"]
+[ext_resource type="Texture2D" uid="uid://dysv70gcgt2mo" path="res://assets/CuJ1Y_UdvGc.jpg" id="2_6n3ak"]
+
+[resource]
+script = ExtResource("1_ld6ni")
+texture = ExtResource("2_6n3ak")
+text = "колхоз"

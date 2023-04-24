@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="RebusData" load_steps=3 format=3 uid="uid://0wq0qgwvw2i5"]
+
+[ext_resource type="Script" path="res://scripts/rebus_data.gd" id="1_iamgg"]
+[ext_resource type="Texture2D" uid="uid://b66e1mmnq5yj8" path="res://assets/OumrYVHC5-U.jpg" id="2_72orv"]
+
+[resource]
+script = ExtResource("1_iamgg")
+texture = ExtResource("2_72orv")
+text = "гласность"

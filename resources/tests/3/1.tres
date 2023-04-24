@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://be8pxb2xabr1b"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_di4d8"]
+
+[resource]
+script = ExtResource("1_di4d8")
+text = "В каком году было установлено единство мер и весов на всей территории Речи Посполитой?"
+answer = "1766"

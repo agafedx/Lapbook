@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://scripts/test_question.gd" id="1_c54eo"]
 
 [node name="test_question" type="PanelContainer"]
-custom_minimum_size = Vector2(495, 200)
+custom_minimum_size = Vector2(495, 150)
 offset_right = 495.0
-offset_bottom = 200.0
+offset_bottom = 150.0
 script = ExtResource("1_c54eo")
 
 [node name="Panel" type="Panel" parent="."]
@@ -14,12 +14,14 @@ layout_mode = 2
 
 [node name="LineEdit" type="LineEdit" parent="Panel"]
 layout_mode = 2
-offset_top = 160.0
+offset_top = 112.0
 offset_right = 496.0
-offset_bottom = 191.0
+offset_bottom = 143.0
 placeholder_text = "Ответ"
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 2
-size_flags_vertical = 0
-text = "1. Вопрос звучит так: бла бла бла бла бла бла бла бла бла"
+[node name="Label" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_right = 496.0
+offset_bottom = 112.0
+
+[connection signal="text_changed" from="Panel/LineEdit" to="." method="_on_line_edit_text_changed"]

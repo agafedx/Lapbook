@@ -1,6 +1,7 @@
+Label
+RichTextLabel
 Panel
 LineEdit
-Label
 PanelContainer
 GridContainer
 Control
@@ -15,7 +16,6 @@ VFlowContainer
 FlowContainer
 Button
 AnimationPlayer
-RichTextLabel
 PopupPanel
 VBoxContainer
 TextureButton

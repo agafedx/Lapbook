@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://bextbumtdibx6"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_u264k"]
+
+[resource]
+script = ExtResource("1_u264k")
+text = "В каком году на Краковском сейме литовский князь Ягайло был избран польским королем?"
+answer = "1385"

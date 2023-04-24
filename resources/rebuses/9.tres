@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="RebusData" load_steps=3 format=3 uid="uid://b32ms4ib7l047"]
+
+[ext_resource type="Script" path="res://scripts/rebus_data.gd" id="1_81c4y"]
+[ext_resource type="Texture2D" uid="uid://hyt06bngj876" path="res://assets/VHjf9arnpeE.jpg" id="2_dgb4t"]
+
+[resource]
+script = ExtResource("1_81c4y")
+texture = ExtResource("2_dgb4t")
+text = "община"

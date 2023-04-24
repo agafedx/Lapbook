@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://c575qtnggktbw"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_056m5"]
+
+[resource]
+script = ExtResource("1_056m5")
+text = "Как губерния была создана на белорусских землях, отошедших к Российской империи в результате второго раздела Речи Посполитой?"
+answer = "Минская"

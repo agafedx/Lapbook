@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://dsf7q0i13v0s"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_qom10"]
+
+[resource]
+script = ExtResource("1_qom10")
+text = "В каком году столица Великого княжества Литовского была перенесена в Вильно?"
+answer = "1323"

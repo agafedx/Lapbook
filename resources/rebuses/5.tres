@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="RebusData" load_steps=3 format=3 uid="uid://bn7le8ovwtafn"]
+
+[ext_resource type="Script" path="res://scripts/rebus_data.gd" id="1_aoe8k"]
+[ext_resource type="Texture2D" uid="uid://djxx02chsmqeb" path="res://assets/ivCu1Rs4PXg.jpg" id="2_0cd3t"]
+
+[resource]
+script = ExtResource("1_aoe8k")
+texture = ExtResource("2_0cd3t")
+text = "пролетариат"

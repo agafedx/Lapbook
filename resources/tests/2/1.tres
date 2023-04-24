@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://7qwh3ar3rnri"]
+
+[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_3on48"]
+
+[resource]
+script = ExtResource("1_3on48")
+text = "Как называлось сражение 1362 г., в котором великий князь литовский Ольгерд разгромил ордынскую армию и освободил от кочевников земли Западной и Юго-Западной Руси?"
+answer = "битва на Синих водах"
