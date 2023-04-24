@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://5gb1epduqmv7"]
+
+[ext_resource type="Script" path="res://scripts/xword.gd" id="1_ufh3t"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_17fl1"]
+font_size = 26
+
+[sub_resource type="LabelSettings" id="LabelSettings_jov3i"]
+font_size = 30
+outline_size = 6
+outline_color = Color(0.505882, 0.505882, 0.505882, 1)
+
+[node name="xword" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ufh3t")
+crossword_size = 6
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 114.0
+offset_right = 1089.0
+offset_bottom = 529.0
+
+[node name="crossword" type="GridContainer" parent="Panel/ScrollContainer"]
+layout_mode = 2
+columns = 5
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 45.0
+offset_right = 624.0
+offset_bottom = 84.0
+text = "Кроссворд"
+label_settings = SubResource("LabelSettings_17fl1")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+offset_left = 48.0
+offset_top = 560.0
+offset_right = 146.0
+offset_bottom = 591.0
+text = "Проверить"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 560.0
+offset_right = 272.0
+offset_bottom = 591.0
+text = "Вопросы"
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+title = "Вопросы"
+position = Vector2i(300, 50)
+size = Vector2i(500, 500)
+unresizable = false
+borderless = false
+content_scale_mode = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 496.0
+offset_bottom = 496.0
+horizontal_scroll_mode = 0
+
+[node name="Label" type="Label" parent="PopupPanel/ScrollContainer"]
+layout_mode = 2
+
+[node name="main" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1002.0
+offset_top = 568.0
+offset_right = 1105.0
+offset_bottom = 599.0
+text = "На главную"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 549.0
+offset_right = 643.0
+offset_bottom = 594.0
+label_settings = SubResource("LabelSettings_jov3i")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="main" to="." method="_on_main_pressed"]

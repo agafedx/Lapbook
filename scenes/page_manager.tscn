@@ -13,4 +13,4 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8h2ji")
-arr = Array[PackedScene]([ExtResource("2_ln660"), ExtResource("3_6ambo"), ExtResource("4_e30ht")])
+arr = Array[PackedScene]([ExtResource("2_ln660"), ExtResource("3_6ambo"), ExtResource("4_e30ht"), ExtResource("2_ln660"), ExtResource("3_6ambo")])

@@ -1,10 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbd0qixmnbtuk"]
+[gd_scene load_steps=8 format=3 uid="uid://dbd0qixmnbtuk"]
 
 [ext_resource type="Script" path="res://scripts/g.gd" id="1_8nlyq"]
 [ext_resource type="Resource" uid="uid://b30he87mxp3wg" path="res://resources/data_resources/0.tres" id="2_ta870"]
 [ext_resource type="Resource" uid="uid://ep738yopjos5" path="res://resources/data_resources/1.tres" id="3_1p3ia"]
 [ext_resource type="Resource" uid="uid://c78su42bqbl4o" path="res://resources/data_resources/2.tres" id="4_vmg2t"]
+[ext_resource type="Resource" uid="uid://68xu82tntaxm" path="res://resources/files/1.tres" id="5_v10gh"]
+[ext_resource type="Resource" uid="uid://ydgdrm80v53k" path="res://resources/files/2.tres" id="6_iy5uq"]
+[ext_resource type="Resource" uid="uid://ducrhifdsugst" path="res://resources/rebuses/1.tres" id="7_yy3a7"]
 
 [node name="game_control" type="Node"]
 script = ExtResource("1_8nlyq")
 array = Array[Resource]([ExtResource("2_ta870"), ExtResource("3_1p3ia"), ExtResource("4_vmg2t")])
+files = Array[Resource]([ExtResource("5_v10gh"), ExtResource("6_iy5uq"), null, null, null])
+rebus = Array[Resource]([ExtResource("7_yy3a7"), ExtResource("7_yy3a7"), ExtResource("7_yy3a7"), ExtResource("7_yy3a7"), ExtResource("7_yy3a7")])

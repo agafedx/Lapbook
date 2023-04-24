@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv3lrvtevjpii"]
+
+[ext_resource type="Script" path="res://scripts/letter.gd" id="1_lgcc1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0mdq8"]
+bg_color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[sub_resource type="Theme" id="Theme_whbhp"]
+LineEdit/styles/normal = SubResource("StyleBoxFlat_0mdq8")
+
+[node name="letter" type="PanelContainer"]
+custom_minimum_size = Vector2(70, 70)
+script = ExtResource("1_lgcc1")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+theme = SubResource("Theme_whbhp")
+text = "B"
+alignment = 1
+max_length = 1
+
+[connection signal="text_changed" from="LineEdit" to="." method="_on_line_edit_text_changed"]

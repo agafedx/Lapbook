@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://vqoxyhgr3cg0"]
+
+[ext_resource type="Script" path="res://scripts/test.gd" id="1_gmu4t"]
+[ext_resource type="PackedScene" uid="uid://wkp0polvv7h4" path="res://scenes/test_question.tscn" id="2_hynjc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lx72v"]
+font_size = 32
+outline_size = 3
+outline_color = Color(0.4, 0.4, 0.4, 1)
+
+[node name="test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gmu4t")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="main" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1002.0
+offset_top = 568.0
+offset_right = 1105.0
+offset_bottom = 599.0
+text = "На главную"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 35.0
+offset_right = 578.0
+offset_bottom = 83.0
+text = "Тест"
+label_settings = SubResource("LabelSettings_lx72v")
+
+[node name="Panel2" type="Panel" parent="."]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 0
+offset_left = 56.0
+offset_top = 136.0
+offset_right = 1056.0
+offset_bottom = 536.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="tests" type="GridContainer" parent="Panel2/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 2
+
+[node name="test_question" parent="Panel2/ScrollContainer/tests" instance=ExtResource("2_hynjc")]
+layout_mode = 2

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bangc1xrf5ry2"]
+
+[node name="test_manager" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2

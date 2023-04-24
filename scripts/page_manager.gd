@@ -22,4 +22,3 @@ func next():
 	old.z_index = 0
 	current = add()
 	current.new()
-

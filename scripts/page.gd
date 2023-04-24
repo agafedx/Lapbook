@@ -1,6 +1,6 @@
 extends Control
 signal next_started
-@export var id = 0
+@export var id : int = 0
 func _ready():
 	var x = GameControl.array[id]
 	$Panel/Label.text = x.header
@@ -16,3 +16,7 @@ func next():
 
 func new():
 	$AnimationPlayer.play("new")
+
+
+func _on_main_pressed():
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
