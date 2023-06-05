@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://ulne85i34evi"]
+
+[ext_resource type="FontFile" uid="uid://daexgdpsrdjxi" path="res://assets/2.0/ofont.ru_Calypso.ttf" id="1_psf6u"]
+[ext_resource type="Script" path="res://scripts/Label_button.gd" id="2_2js7a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jdl8r"]
+font = ExtResource("1_psf6u")
+font_size = 80
+font_color = Color(0.180392, 0.180392, 0.180392, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cb0qx"]
+size = Vector2(500, 400)
+
+[node name="Label" type="Label"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = -317.0
+offset_bottom = -241.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Верно!"
+label_settings = SubResource("LabelSettings_jdl8r")
+script = ExtResource("2_2js7a")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(112, 48)
+shape = SubResource("RectangleShape2D_cb0qx")
+
+[connection signal="pressed" from="TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]

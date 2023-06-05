@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=3 format=3 uid="uid://oq6y88n4ml4x"]
+
+[ext_resource type="Script" path="res://test_info.gd" id="1_ki57q"]
+[ext_resource type="Texture2D" uid="uid://dr3n3j8xkqq7i" path="res://assets/2.0/Замки/Тест/5/1573381702_mirskij-zamok-belarus-1.jpg" id="1_upm64"]
+
+[resource]
+script = ExtResource("1_ki57q")
+header = "Какой памятник архитектуры в 2000 году внесен в список Всемирного наследия ЮНЕСКО?"
+q_image = ExtResource("1_upm64")
+q_image_scale = Vector2(0.05, 0.05)
+q_question1 = "1. Мирский замок"
+q_question2 = "2. Несвижский замок"
+q_question3 = "3. Лидский замок"
+q_question4 = "4. Новогрудский замок"
+q_answer = 1

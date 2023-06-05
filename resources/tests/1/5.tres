@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://dkoxwnfma2v51"]
-
-[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_5siph"]
-
-[resource]
-script = ExtResource("1_5siph")
-text = "В каком году была заключена Люблинская уния, которая провозглашала объединение Польского королевства с Великим княжеством Литовским в единое государство - Речь Посполитую?"
-answer = "1569"

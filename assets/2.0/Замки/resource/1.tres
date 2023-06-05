@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=3 format=3 uid="uid://du3bgl2ut5irf"]
+
+[ext_resource type="Script" path="res://test_info.gd" id="1_5baeg"]
+[ext_resource type="Texture2D" uid="uid://cd44nebi7lqqr" path="res://assets/2.0/Замки/Тест/1/kosava.jpg" id="1_foidk"]
+
+[resource]
+script = ExtResource("1_5baeg")
+header = "Руины какого замка называли рыцарской грезой?"
+q_image = ExtResource("1_foidk")
+q_image_scale = Vector2(0.25, 0.25)
+q_question1 = "1. Дворцового комплекса в Ружанах"
+q_question2 = "2. Дворца Пусловских в Коссово"
+q_question3 = "3. Каменецкой Вежи"
+q_question4 = "4. Мирского замка"
+q_answer = 2

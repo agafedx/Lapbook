@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Files" load_steps=2 format=3 uid="uid://ydgdrm80v53k"]
-
-[ext_resource type="Script" path="res://scripts/files.gd" id="1_5d3rx"]
-
-[resource]
-script = ExtResource("1_5d3rx")
-file = "res://resources/files/res/22.csv"
-answers = "res://resources/files/res/21.csv"
-questions = "res://resources/files/res/23.csv"

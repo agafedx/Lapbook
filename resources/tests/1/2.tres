@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://clujxuaj6v067"]
-
-[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_na0ts"]
-
-[resource]
-script = ExtResource("1_na0ts")
-text = "Как звали сына Гедимина, который после гибели отца (1341 г.) стал правителем Великого княжества Литовского?"
-answer = "Явнутий"

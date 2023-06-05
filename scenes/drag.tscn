@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1d48a6vxyxsj"]
+
+[ext_resource type="Script" path="res://scripts/drag.gd" id="1_hcav3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gckk1"]
+size = Vector2(240, 80)
+
+[node name="drag" type="Area2D"]
+script = ExtResource("1_hcav3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gckk1")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

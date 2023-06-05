@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MemoRes" load_steps=4 format=3 uid="uid://bbrhkouj1mbix"]
+
+[ext_resource type="Texture2D" uid="uid://0cqksyk1dxbo" path="res://assets/2.0/Памятники/памятники1/Жажда(в).jpg" id="1_f7why"]
+[ext_resource type="Script" path="res://memo_test_info.gd" id="1_ys436"]
+[ext_resource type="Texture2D" uid="uid://rqaqnt7rf8ix" path="res://assets/2.0/Памятники/памятники1/Памятник освобождения Бреста.jpg" id="2_w3spc"]
+
+[resource]
+script = ExtResource("1_ys436")
+text = "Какой из памятников находится на территории Брестской крепости?"
+correct = 1
+image1 = ExtResource("1_f7why")
+image2 = ExtResource("2_w3spc")

@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://c27cuxf2lu287"]
-
-[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_4ufp8"]
-
-[resource]
-script = ExtResource("1_4ufp8")
-text = "В каком году польский король Владислав (Ягайло) приступил к \"крещению Литвы\"?"
-answer = "1387"

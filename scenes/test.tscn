@@ -1,15 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://vqoxyhgr3cg0"]
+[gd_scene load_steps=8 format=3 uid="uid://cusfucpaveree"]
 
 [ext_resource type="Script" path="res://scripts/test.gd" id="1_gmu4t"]
+[ext_resource type="FontFile" uid="uid://daexgdpsrdjxi" path="res://assets/2.0/ofont.ru_Calypso.ttf" id="1_mnqx5"]
+[ext_resource type="Resource" uid="uid://du3bgl2ut5irf" path="res://assets/2.0/Замки/resource/1.tres" id="3_5jt0q"]
+[ext_resource type="ButtonGroup" uid="uid://b7y74823agfy3" path="res://assets/2.0/Замки/resource/button.tres" id="5_30etr"]
+[ext_resource type="Texture2D" uid="uid://dr3n3j8xkqq7i" path="res://assets/2.0/Замки/Тест/5/1573381702_mirskij-zamok-belarus-1.jpg" id="5_a3qqb"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_lx72v"]
+[sub_resource type="Theme" id="Theme_gontg"]
+Label/colors/font_color = Color(0.2, 0.2, 0.2, 1)
+Label/fonts/font = ExtResource("1_mnqx5")
+
+[sub_resource type="LabelSettings" id="LabelSettings_ankr8"]
+font = ExtResource("1_mnqx5")
 font_size = 32
-outline_size = 3
-outline_color = Color(0.4, 0.4, 0.4, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_rghl7"]
-font_size = 28
-outline_size = 3
+font_color = Color(0.0588235, 0.0588235, 0.0588235, 1)
 
 [node name="test" type="Control"]
 layout_mode = 3
@@ -18,59 +22,90 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_gontg")
 script = ExtResource("1_gmu4t")
-
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="main" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 1002.0
-offset_top = 568.0
-offset_right = 1105.0
-offset_bottom = 599.0
-text = "На главную"
+test = ExtResource("3_5jt0q")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 510.0
-offset_top = 35.0
-offset_right = 578.0
-offset_bottom = 83.0
-text = "Тест"
-label_settings = SubResource("LabelSettings_lx72v")
-
-[node name="Panel2" type="Panel" parent="."]
-custom_minimum_size = Vector2(400, 400)
-layout_mode = 0
-offset_left = 322.0
-offset_top = 112.0
-offset_right = 823.0
-offset_bottom = 512.0
-
-[node name="ScrollContainer" type="ScrollContainer" parent="Panel2"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="tests" type="GridContainer" parent="Panel2/ScrollContainer"]
-unique_name_in_owner = true
-layout_mode = 2
+offset_left = 256.0
+offset_top = 104.0
+offset_right = 1024.0
+offset_bottom = 174.0
+text = "asdasdasdasdsadasdasdasdasasdasdasdasdasddasdasdasd"
+label_settings = SubResource("LabelSettings_ankr8")
+autowrap_mode = 3
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 501.0
-offset_top = 558.0
-offset_right = 642.0
-offset_bottom = 598.0
-label_settings = SubResource("LabelSettings_rghl7")
+offset_left = 344.0
+offset_top = 432.0
+offset_right = 419.0
+offset_bottom = 464.0
+text = "asdasdasd"
 
-[connection signal="pressed" from="Panel/main" to="." method="_on_main_pressed"]
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 464.0
+offset_right = 419.0
+offset_bottom = 496.0
+text = "asdasdasd"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 496.0
+offset_right = 419.0
+offset_bottom = 528.0
+text = "asdasdasd"
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 528.0
+offset_right = 419.0
+offset_bottom = 560.0
+text = "asdasdasd"
+
+[node name="CheckBox" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 432.0
+offset_right = 336.0
+offset_bottom = 456.0
+button_group = ExtResource("5_30etr")
+
+[node name="CheckBox2" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 464.0
+offset_right = 336.0
+offset_bottom = 488.0
+button_group = ExtResource("5_30etr")
+
+[node name="CheckBox3" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 496.0
+offset_right = 336.0
+offset_bottom = 520.0
+button_group = ExtResource("5_30etr")
+
+[node name="CheckBox4" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 528.0
+offset_right = 336.0
+offset_bottom = 552.0
+button_group = ExtResource("5_30etr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(592, 312)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("5_a3qqb")
+
+[connection signal="toggled" from="CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="toggled" from="CheckBox2" to="." method="_on_check_box_2_toggled"]
+[connection signal="toggled" from="CheckBox3" to="." method="_on_check_box_3_toggled"]
+[connection signal="toggled" from="CheckBox4" to="." method="_on_check_box_4_toggled"]

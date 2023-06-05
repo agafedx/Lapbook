@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=3 format=3 uid="uid://oee6osivobr3"]
+
+[ext_resource type="Script" path="res://test_info.gd" id="1_1jyir"]
+[ext_resource type="Texture2D" uid="uid://1dtof6437hk" path="res://assets/2.0/Замки/Тест/2/1de70420258d51ba9e8cc31546feee4c.webp" id="1_rw3dr"]
+
+[resource]
+script = ExtResource("1_1jyir")
+header = "На территории какого замка ежегодно проводятся рыцарские фестивали?"
+q_image = ExtResource("1_rw3dr")
+q_image_scale = Vector2(0.3, 0.3)
+q_question1 = "1. Мирского"
+q_question2 = "2. Новогрудского"
+q_question3 = "3. Лидского"
+q_question4 = "4. Коссовского"
+q_answer = 2

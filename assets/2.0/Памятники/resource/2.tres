@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MemoRes" load_steps=4 format=3 uid="uid://dpqti5w083wr5"]
+
+[ext_resource type="Script" path="res://memo_test_info.gd" id="1_k8ukj"]
+[ext_resource type="Texture2D" uid="uid://d3rqrsslks5qu" path="res://assets/2.0/Памятники/памятники2/letyashhij-aist-700x1050.jpg" id="1_oe5mp"]
+[ext_resource type="Texture2D" uid="uid://dixauy6rh3bbt" path="res://assets/2.0/Памятники/памятники2/памятник 1000-летию Бреста(в).jpg" id="2_yqcu3"]
+
+[resource]
+script = ExtResource("1_k8ukj")
+text = "На какой картинке изображен памятник 1000-летию Бреста?"
+correct = 2
+image1 = ExtResource("1_oe5mp")
+image2 = ExtResource("2_yqcu3")

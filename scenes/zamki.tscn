@@ -1,0 +1,196 @@
+[gd_scene load_steps=23 format=3 uid="uid://ehyteqbh8fsa"]
+
+[ext_resource type="Script" path="res://scenes/sport.gd" id="1_4wv4h"]
+[ext_resource type="Texture2D" uid="uid://b3pcou8t2gghw" path="res://assets/2.0/ДЫПЛОМ/катинки/Фон.png" id="2_c5kqv"]
+[ext_resource type="PackedScene" uid="uid://uo0t6aidsuyq" path="res://scenes/drop.tscn" id="3_8x6sw"]
+[ext_resource type="Texture2D" uid="uid://bn25fivrg68r5" path="res://assets/2.0/Замки/Соотнести/Быховский замок.jpg" id="4_tld33"]
+[ext_resource type="Texture2D" uid="uid://c7cleylqpro6w" path="res://assets/2.0/Замки/Соотнести/Новогрудский замок.jpg" id="5_2jda6"]
+[ext_resource type="Texture2D" uid="uid://cso3c88mrsidh" path="res://assets/2.0/Замки/Соотнести/Смолянский-замок.jpg" id="6_cfv2w"]
+[ext_resource type="Texture2D" uid="uid://j66greaj60f8" path="res://assets/2.0/Замки/Соотнести/Пищаловский замок.jpg" id="7_mw56a"]
+[ext_resource type="Texture2D" uid="uid://0qs0qdeiyt24" path="res://assets/2.0/Замки/Соотнести/Любчанский замок.jpg" id="8_14w6v"]
+[ext_resource type="PackedScene" uid="uid://b1d48a6vxyxsj" path="res://scenes/drag.tscn" id="9_77xeq"]
+[ext_resource type="Texture2D" uid="uid://djj1l1lbvtltr" path="res://assets/2.0/Замки/Соотнести/Кревский замок.jpg" id="9_eym6i"]
+[ext_resource type="Texture2D" uid="uid://bvto2i7y4aadc" path="res://assets/2.0/Замки/Соотнести/Ф_Быховский замок.png" id="11_k3heq"]
+[ext_resource type="Texture2D" uid="uid://bnltkw5mv25cv" path="res://assets/2.0/Замки/Соотнести/Ф_Кревский замок.png" id="12_wfqri"]
+[ext_resource type="Texture2D" uid="uid://bcjxjj7rwoa3q" path="res://assets/2.0/Замки/Соотнести/Ф_Любчанский замок.png" id="13_c07ds"]
+[ext_resource type="Texture2D" uid="uid://r84iqmplll7x" path="res://assets/2.0/Замки/Соотнести/Ф_Новогрудский замок.png" id="14_fuf2h"]
+[ext_resource type="Texture2D" uid="uid://bpnnlk3r8aouq" path="res://assets/2.0/Замки/Соотнести/Ф_Пищаловский замок.png" id="15_7r5c5"]
+[ext_resource type="Texture2D" uid="uid://dsiyignwxx75e" path="res://assets/2.0/меню.png" id="15_bvpni"]
+[ext_resource type="Texture2D" uid="uid://cpwu5114rhc1h" path="res://assets/2.0/Замки/Соотнести/Ф_Смолянский замок.png" id="16_c5l0n"]
+[ext_resource type="Texture2D" uid="uid://c7qhex3qhdl7t" path="res://assets/2.0/check.png" id="16_mqdf7"]
+[ext_resource type="PackedScene" uid="uid://ulne85i34evi" path="res://scenes/label_butt.tscn" id="19_gn3cx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36lhs"]
+size = Vector2(160, 224)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r7gn4"]
+size = Vector2(256, 144)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5uof"]
+size = Vector2(256, 144)
+
+[node name="zamki" type="Node2D"]
+script = ExtResource("1_4wv4h")
+
+[node name="TextureRect" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(0.9, 0.905556)
+texture = ExtResource("2_c5kqv")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop" type="Node2D" parent="."]
+
+[node name="drop" parent="drop" instance=ExtResource("3_8x6sw")]
+position = Vector2(744, 352)
+id = 1
+
+[node name="CollisionShape2D" parent="drop/drop" index="0"]
+position = Vector2(0, 8)
+
+[node name="ЕкатеринаКарстен" type="Sprite2D" parent="drop/drop"]
+position = Vector2(-5.72205e-06, 8.00002)
+scale = Vector2(0.28, 0.24)
+texture = ExtResource("4_tld33")
+
+[node name="drop2" parent="drop" instance=ExtResource("3_8x6sw")]
+position = Vector2(304, 264)
+id = 4
+
+[node name="CollisionShape2D" parent="drop/drop2" index="0"]
+position = Vector2(-64, -32)
+shape = SubResource("RectangleShape2D_36lhs")
+
+[node name="ВикторияАзаренко" type="Sprite2D" parent="drop/drop2"]
+position = Vector2(-64, -32)
+scale = Vector2(0.15625, 0.291667)
+texture = ExtResource("5_2jda6")
+
+[node name="drop3" parent="drop" instance=ExtResource("3_8x6sw")]
+position = Vector2(1104, 264)
+
+[node name="CollisionShape2D" parent="drop/drop3" index="0"]
+position = Vector2(-64, -32)
+shape = SubResource("RectangleShape2D_36lhs")
+
+[node name="ВиталийЩербо" type="Sprite2D" parent="drop/drop3"]
+position = Vector2(-64, -32)
+scale = Vector2(0.15625, 0.328446)
+texture = ExtResource("6_cfv2w")
+
+[node name="drop4" parent="drop" instance=ExtResource("3_8x6sw")]
+position = Vector2(800, 184)
+id = 5
+
+[node name="CollisionShape2D" parent="drop/drop4" index="0"]
+position = Vector2(-8, 16)
+shape = SubResource("RectangleShape2D_r7gn4")
+
+[node name="ДарьяДомрачева" type="Sprite2D" parent="drop/drop4"]
+position = Vector2(-12, 16)
+scale = Vector2(0.22, 0.182278)
+texture = ExtResource("7_mw56a")
+
+[node name="drop5" parent="drop" instance=ExtResource("3_8x6sw")]
+position = Vector2(480, 192)
+id = 3
+
+[node name="CollisionShape2D" parent="drop/drop5" index="0"]
+position = Vector2(16, 8)
+shape = SubResource("RectangleShape2D_u5uof")
+
+[node name="АлексейГришин" type="Sprite2D" parent="drop/drop5"]
+position = Vector2(16, 8)
+scale = Vector2(1.28, 0.96)
+texture = ExtResource("8_14w6v")
+
+[node name="drop6" parent="drop" instance=ExtResource("3_8x6sw")]
+position = Vector2(512, 352)
+id = 2
+
+[node name="CollisionShape2D" parent="drop/drop6" index="0"]
+position = Vector2(0, 8)
+
+[node name="ЕкатеринаКарстен" type="Sprite2D" parent="drop/drop6"]
+position = Vector2(1.14441e-05, 8.00001)
+scale = Vector2(0.21875, 0.1875)
+texture = ExtResource("9_eym6i")
+
+[node name="drag" type="Node2D" parent="."]
+
+[node name="drag" parent="drag" instance=ExtResource("9_77xeq")]
+position = Vector2(272, 544)
+id = 1
+metadata/_edit_group_ = true
+
+[node name="ФБыховскийЗамок" type="Sprite2D" parent="drag/drag"]
+texture = ExtResource("11_k3heq")
+
+[node name="drag2" parent="drag" instance=ExtResource("9_77xeq")]
+position = Vector2(272, 440)
+id = 2
+metadata/_edit_group_ = true
+
+[node name="ФКревскийЗамок" type="Sprite2D" parent="drag/drag2"]
+texture = ExtResource("12_wfqri")
+
+[node name="drag3" parent="drag" instance=ExtResource("9_77xeq")]
+position = Vector2(512, 496)
+id = 3
+metadata/_edit_group_ = true
+
+[node name="ФЛюбчанскийЗамок" type="Sprite2D" parent="drag/drag3"]
+texture = ExtResource("13_c07ds")
+
+[node name="drag4" parent="drag" instance=ExtResource("9_77xeq")]
+position = Vector2(992, 536)
+id = 4
+metadata/_edit_group_ = true
+
+[node name="ФНовогрудскийЗамок" type="Sprite2D" parent="drag/drag4"]
+texture = ExtResource("14_fuf2h")
+
+[node name="drag5" parent="drag" instance=ExtResource("9_77xeq")]
+position = Vector2(992, 432)
+id = 5
+metadata/_edit_group_ = true
+
+[node name="ФПищаловскийЗамок" type="Sprite2D" parent="drag/drag5"]
+texture = ExtResource("15_7r5c5")
+
+[node name="drag6" parent="drag" instance=ExtResource("9_77xeq")]
+position = Vector2(752, 496)
+metadata/_edit_group_ = true
+
+[node name="ФСмолянскийЗамок" type="Sprite2D" parent="drag/drag6"]
+texture = ExtResource("16_c5l0n")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 936.0
+offset_top = 568.0
+offset_right = 1149.0
+offset_bottom = 644.0
+texture_normal = ExtResource("15_bvpni")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 495.0
+offset_top = 556.0
+offset_right = 759.0
+offset_bottom = 662.0
+texture_normal = ExtResource("16_mqdf7")
+
+[node name="Label" parent="." instance=ExtResource("19_gn3cx")]
+offset_left = 488.0
+offset_top = 272.0
+offset_right = 747.0
+offset_bottom = 355.0
+path = "res://scenes/zamki_test.tscn"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+
+[editable path="drop/drop"]
+[editable path="drop/drop2"]
+[editable path="drop/drop3"]
+[editable path="drop/drop4"]
+[editable path="drop/drop5"]
+[editable path="drop/drop6"]

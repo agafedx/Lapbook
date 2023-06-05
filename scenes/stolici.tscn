@@ -1,0 +1,522 @@
+[gd_scene load_steps=28 format=3 uid="uid://cbg54fol7lrde"]
+
+[ext_resource type="Script" path="res://scenes/sport.gd" id="1_8gvvp"]
+[ext_resource type="Texture2D" uid="uid://b3pcou8t2gghw" path="res://assets/2.0/ДЫПЛОМ/катинки/Фон.png" id="2_yb717"]
+[ext_resource type="PackedScene" uid="uid://uo0t6aidsuyq" path="res://scenes/drop.tscn" id="3_fh8k0"]
+[ext_resource type="Texture2D" uid="uid://dxve3xpiwdmo4" path="res://assets/2.0/столицы/gerb-bobrujska.png" id="5_vx0bk"]
+[ext_resource type="Texture2D" uid="uid://di7lvcwtxx8jk" path="res://assets/2.0/столицы/Полоцк.png" id="6_sg6l5"]
+[ext_resource type="Texture2D" uid="uid://b7o3o6md7qxyy" path="res://assets/2.0/столицы/Гомель.png" id="7_qga31"]
+[ext_resource type="Texture2D" uid="uid://bwlr36si2n7dn" path="res://assets/2.0/столицы/Несвиж.png" id="8_h8lpx"]
+[ext_resource type="PackedScene" uid="uid://b1d48a6vxyxsj" path="res://scenes/drag.tscn" id="9_223cn"]
+[ext_resource type="Texture2D" uid="uid://c7kkit4vlwjo1" path="res://assets/2.0/столицы/2010-2016.png" id="9_esggb"]
+[ext_resource type="Texture2D" uid="uid://brgsiuyyjr0co" path="res://assets/2.0/столицы/Герб-Могилева.png" id="9_w5xpu"]
+[ext_resource type="Texture2D" uid="uid://gjht6y1v44n3" path="res://assets/2.0/столицы/Гродно.png" id="10_4n4rt"]
+[ext_resource type="Texture2D" uid="uid://bni4pgxwj72xu" path="res://assets/2.0/столицы/2017-2023.png" id="10_idme0"]
+[ext_resource type="Texture2D" uid="uid://b1e2vuir3sh66" path="res://assets/2.0/столицы/Брест.png" id="11_emde5"]
+[ext_resource type="Texture2D" uid="uid://dilgwbumehjom" path="res://assets/2.0/столицы/молодечно.png" id="12_6jb8n"]
+[ext_resource type="Texture2D" uid="uid://djp6dxlg3lmc1" path="res://assets/2.0/столицы/Новополоцк.png" id="14_p2viq"]
+[ext_resource type="Texture2D" uid="uid://dsiyignwxx75e" path="res://assets/2.0/меню.png" id="15_kjila"]
+[ext_resource type="Texture2D" uid="uid://bkuq7nctpde44" path="res://assets/2.0/столицы/пинск.png" id="15_mjr1l"]
+[ext_resource type="Texture2D" uid="uid://lks433b3wfo6" path="res://assets/2.0/столицы/лида.png" id="16_0my2u"]
+[ext_resource type="Texture2D" uid="uid://c7qhex3qhdl7t" path="res://assets/2.0/check.png" id="16_6fdol"]
+[ext_resource type="FontFile" uid="uid://daexgdpsrdjxi" path="res://assets/2.0/ofont.ru_Calypso.ttf" id="17_bpspf"]
+[ext_resource type="Texture2D" uid="uid://d3ljjo50cbta6" path="res://assets/2.0/столицы/борисов.png" id="17_icurn"]
+[ext_resource type="Texture2D" uid="uid://dfxbkcye0yuvh" path="res://assets/2.0/столицы/Орша.png" id="18_ebetu"]
+[ext_resource type="Texture2D" uid="uid://cl2jppjuxn2lm" path="res://assets/2.0/столицы/слуцк.png" id="19_idypg"]
+[ext_resource type="PackedScene" uid="uid://ulne85i34evi" path="res://scenes/label_butt.tscn" id="24_hc6oa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wiy8b"]
+size = Vector2(112, 120)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gj4uy"]
+font = ExtResource("17_bpspf")
+font_size = 24
+font_color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6lecr"]
+size = Vector2(80, 88)
+
+[node name="stolici" type="Node2D"]
+script = ExtResource("1_8gvvp")
+
+[node name="TextureRect" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(0.9, 0.905556)
+texture = ExtResource("2_yb717")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop" type="Node2D" parent="."]
+
+[node name="drop" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(240, 200)
+
+[node name="CollisionShape2D" parent="drop/drop" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop"]
+offset_left = -48.0
+offset_top = -88.0
+offset_right = 47.0
+offset_bottom = -61.0
+text = "Полоцк"
+label_settings = SubResource("LabelSettings_gj4uy")
+
+[node name="drop2" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(368, 200)
+id = 1
+
+[node name="CollisionShape2D" parent="drop/drop2" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop2"]
+offset_left = -48.0
+offset_top = -88.0
+offset_right = 47.0
+offset_bottom = -61.0
+text = "Гомель"
+label_settings = SubResource("LabelSettings_gj4uy")
+
+[node name="drop3" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(496, 200)
+id = 2
+
+[node name="CollisionShape2D" parent="drop/drop3" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop3"]
+offset_left = -48.0
+offset_top = -88.0
+offset_right = 47.0
+offset_bottom = -61.0
+text = "Несвиж"
+label_settings = SubResource("LabelSettings_gj4uy")
+
+[node name="drop4" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(624, 200)
+id = 3
+
+[node name="CollisionShape2D" parent="drop/drop4" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop4"]
+offset_left = -48.0
+offset_top = -88.0
+offset_right = 47.0
+offset_bottom = -61.0
+text = "Могилёв"
+label_settings = SubResource("LabelSettings_gj4uy")
+
+[node name="drop5" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(752, 200)
+id = 4
+
+[node name="CollisionShape2D" parent="drop/drop5" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop5"]
+offset_left = -40.0
+offset_top = -88.0
+offset_right = 55.0
+offset_bottom = -61.0
+text = "Гродно"
+label_settings = SubResource("LabelSettings_gj4uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop6" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(880, 200)
+id = 5
+
+[node name="CollisionShape2D" parent="drop/drop6" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop6"]
+offset_left = -40.0
+offset_top = -88.0
+offset_right = 55.0
+offset_bottom = -61.0
+text = "Брест"
+label_settings = SubResource("LabelSettings_gj4uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop7" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(1008, 200)
+id = 6
+
+[node name="CollisionShape2D" parent="drop/drop7" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop7"]
+offset_left = -56.0
+offset_top = -88.0
+offset_right = 72.0
+offset_bottom = -61.0
+text = "Молодечно"
+label_settings = SubResource("LabelSettings_gj4uy")
+
+[node name="drop8" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(256, 368)
+id = 7
+
+[node name="CollisionShape2D" parent="drop/drop8" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop8"]
+offset_left = -56.0
+offset_top = -88.0
+offset_right = 58.0
+offset_bottom = -61.0
+text = "Бобруйск"
+label_settings = SubResource("LabelSettings_gj4uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop9" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(384, 368)
+id = 8
+
+[node name="CollisionShape2D" parent="drop/drop9" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop9"]
+offset_left = -64.0
+offset_top = -88.0
+offset_right = 73.0
+offset_bottom = -61.0
+text = "Новополоцк"
+label_settings = SubResource("LabelSettings_gj4uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop10" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(512, 368)
+id = 9
+
+[node name="CollisionShape2D" parent="drop/drop10" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop10"]
+offset_left = -32.0
+offset_top = -88.0
+offset_right = 63.0
+offset_bottom = -61.0
+text = "Пинск"
+label_settings = SubResource("LabelSettings_gj4uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop11" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(640, 368)
+id = 10
+
+[node name="CollisionShape2D" parent="drop/drop11" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop11"]
+offset_left = -32.0
+offset_top = -88.0
+offset_right = 63.0
+offset_bottom = -61.0
+text = "Лида"
+label_settings = SubResource("LabelSettings_gj4uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop12" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(768, 368)
+id = 11
+
+[node name="CollisionShape2D" parent="drop/drop12" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop12"]
+offset_left = -48.0
+offset_top = -88.0
+offset_right = 47.0
+offset_bottom = -61.0
+text = "Борисов"
+label_settings = SubResource("LabelSettings_gj4uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop13" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(896, 368)
+id = 12
+
+[node name="CollisionShape2D" parent="drop/drop13" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop13"]
+offset_left = -32.0
+offset_top = -88.0
+offset_right = 63.0
+offset_bottom = -61.0
+text = "Орша"
+label_settings = SubResource("LabelSettings_gj4uy")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop14" parent="drop" instance=ExtResource("3_fh8k0")]
+position = Vector2(1024, 368)
+id = 13
+
+[node name="CollisionShape2D" parent="drop/drop14" index="0"]
+shape = SubResource("RectangleShape2D_wiy8b")
+
+[node name="city" type="Label" parent="drop/drop14"]
+offset_left = -48.0
+offset_top = -88.0
+offset_right = 47.0
+offset_bottom = -61.0
+text = "Слуцк"
+label_settings = SubResource("LabelSettings_gj4uy")
+
+[node name="drag" type="Node2D" parent="."]
+
+[node name="drag" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(192, 520)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag"]
+position = Vector2(-9.53674e-07, -4)
+scale = Vector2(0.170576, 0.161468)
+texture = ExtResource("6_sg6l5")
+
+[node name="drag2" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(280, 520)
+id = 1
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag2" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag2"]
+position = Vector2(3.57628e-06, -4.00001)
+scale = Vector2(0.08, 0.0761246)
+texture = ExtResource("7_qga31")
+
+[node name="drag3" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(368, 520)
+id = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag3" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag3"]
+position = Vector2(7.62939e-06, -4.00001)
+scale = Vector2(0.0666667, 0.0611111)
+texture = ExtResource("8_h8lpx")
+
+[node name="drag4" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(456, 520)
+id = 3
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag4" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag4"]
+position = Vector2(1.09076e-05, -3.99997)
+scale = Vector2(0.1, 0.0972375)
+texture = ExtResource("9_w5xpu")
+
+[node name="drag5" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(544, 520)
+id = 4
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag5" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag5"]
+position = Vector2(-9.53674e-07, -3.99999)
+scale = Vector2(0.14652, 0.146667)
+texture = ExtResource("10_4n4rt")
+
+[node name="drag6" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(632, 520)
+id = 5
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag6" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag6"]
+position = Vector2(-2.14577e-05, -4.00002)
+scale = Vector2(0.109589, 0.1)
+texture = ExtResource("11_emde5")
+
+[node name="drag7" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(720, 520)
+id = 6
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag7" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag7"]
+position = Vector2(-3.5584e-05, -4.00001)
+scale = Vector2(0.1, 0.0916667)
+texture = ExtResource("12_6jb8n")
+
+[node name="drag8" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(808, 520)
+id = 7
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag8" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag8"]
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("5_vx0bk")
+
+[node name="drag9" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(896, 520)
+id = 8
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag9" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag9"]
+position = Vector2(1.71661e-05, -4)
+scale = Vector2(0.0666667, 0.0632184)
+texture = ExtResource("14_p2viq")
+
+[node name="drag10" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(984, 520)
+id = 9
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag10" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag10"]
+position = Vector2(3.60012e-05, -4.00002)
+scale = Vector2(0.0806451, 0.0767888)
+texture = ExtResource("15_mjr1l")
+
+[node name="drag11" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(1072, 520)
+id = 10
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag11" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag11"]
+position = Vector2(3.43919e-05, -3.99999)
+scale = Vector2(0.0999999, 0.0903491)
+texture = ExtResource("16_0my2u")
+
+[node name="drag12" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(192, 592)
+id = 11
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag12" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag12"]
+position = Vector2(0.999994, -3.99999)
+scale = Vector2(0.0975, 0.0903491)
+texture = ExtResource("17_icurn")
+
+[node name="drag13" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(280, 592)
+id = 12
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag13" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag13"]
+position = Vector2(-6.19888e-06, -4.00002)
+scale = Vector2(0.106667, 0.099435)
+texture = ExtResource("18_ebetu")
+
+[node name="drag14" parent="drag" instance=ExtResource("9_223cn")]
+position = Vector2(368, 592)
+id = 13
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="drag/drag14" index="0"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_6lecr")
+
+[node name="Gerb-bobrujska" type="Sprite2D" parent="drag/drag14"]
+position = Vector2(1.09076e-05, -3.99998)
+scale = Vector2(0.1, 0.0916667)
+texture = ExtResource("19_idypg")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 936.0
+offset_top = 568.0
+offset_right = 1149.0
+offset_bottom = 644.0
+texture_normal = ExtResource("15_kjila")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 495.0
+offset_top = 556.0
+offset_right = 759.0
+offset_bottom = 662.0
+texture_normal = ExtResource("16_6fdol")
+
+[node name="2010-2016" type="Sprite2D" parent="TextureButton2"]
+position = Vector2(129, -308)
+texture = ExtResource("9_esggb")
+
+[node name="2017-2023" type="Sprite2D" parent="TextureButton2"]
+position = Vector2(129, -140)
+texture = ExtResource("10_idme0")
+
+[node name="Label" parent="." instance=ExtResource("24_hc6oa")]
+offset_left = 480.0
+offset_top = 248.0
+offset_right = 739.0
+offset_bottom = 331.0
+path = "res://scenes/main_menu.tscn"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+
+[editable path="drop/drop"]
+[editable path="drop/drop2"]
+[editable path="drop/drop3"]
+[editable path="drop/drop4"]
+[editable path="drop/drop5"]
+[editable path="drop/drop6"]
+[editable path="drop/drop7"]
+[editable path="drop/drop8"]
+[editable path="drop/drop9"]
+[editable path="drop/drop10"]
+[editable path="drop/drop11"]
+[editable path="drop/drop12"]
+[editable path="drop/drop13"]
+[editable path="drop/drop14"]
+[editable path="drag/drag"]
+[editable path="drag/drag2"]
+[editable path="drag/drag3"]
+[editable path="drag/drag4"]
+[editable path="drag/drag5"]
+[editable path="drag/drag6"]
+[editable path="drag/drag7"]
+[editable path="drag/drag8"]
+[editable path="drag/drag9"]
+[editable path="drag/drag10"]
+[editable path="drag/drag11"]
+[editable path="drag/drag12"]
+[editable path="drag/drag13"]
+[editable path="drag/drag14"]

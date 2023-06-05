@@ -1,0 +1,175 @@
+[gd_scene load_steps=21 format=3 uid="uid://dl8sbf5a5d1pk"]
+
+[ext_resource type="Script" path="res://scenes/sport.gd" id="1_4jf5y"]
+[ext_resource type="Texture2D" uid="uid://b3pcou8t2gghw" path="res://assets/2.0/ДЫПЛОМ/катинки/Фон.png" id="1_u24oi"]
+[ext_resource type="PackedScene" uid="uid://uo0t6aidsuyq" path="res://scenes/drop.tscn" id="2_rmspd"]
+[ext_resource type="Texture2D" uid="uid://cn8u38arktc26" path="res://assets/2.0/спортики/1/Алексей Гришин.jpg" id="2_t63r5"]
+[ext_resource type="Texture2D" uid="uid://d2gukgbcla4im" path="res://assets/2.0/спортики/1/Виктория Азаренко.jpg" id="3_yqulj"]
+[ext_resource type="Texture2D" uid="uid://ck4vp6vvy8mut" path="res://assets/2.0/спортики/1/Виталий Щербо.jpeg" id="4_dav8u"]
+[ext_resource type="Texture2D" uid="uid://bdgo4b5nsx8p6" path="res://assets/2.0/спортики/1/Дарья Домрачева.jpg" id="5_es68c"]
+[ext_resource type="Texture2D" uid="uid://c5h5i2signg4b" path="res://assets/2.0/спортики/1/Екатерина карстен.jpeg" id="6_ntqic"]
+[ext_resource type="Texture2D" uid="uid://diub4ttx8lhk8" path="res://assets/2.0/спортики/1/Ф_Биатлон_Домрачева.png" id="7_i0ct1"]
+[ext_resource type="Texture2D" uid="uid://bkruu4rbrliwa" path="res://assets/2.0/спортики/1/Ф_Гимнастика_Щербо.png" id="8_lpkvh"]
+[ext_resource type="Texture2D" uid="uid://bnd2s6b30k4du" path="res://assets/2.0/спортики/1/Ф_Гребля_Карстен.png" id="9_8ktll"]
+[ext_resource type="Texture2D" uid="uid://cy3npseqpffkp" path="res://assets/2.0/спортики/1/Ф_Теннис_Азаренко.png" id="10_7fxiw"]
+[ext_resource type="Texture2D" uid="uid://ddkvvn18wlfyg" path="res://assets/2.0/спортики/1/Ф_Фристайл_Гришин.png" id="11_hl86q"]
+[ext_resource type="PackedScene" uid="uid://b1d48a6vxyxsj" path="res://scenes/drag.tscn" id="11_mvu34"]
+[ext_resource type="Texture2D" uid="uid://dsiyignwxx75e" path="res://assets/2.0/меню.png" id="15_f7f2w"]
+[ext_resource type="Texture2D" uid="uid://c7qhex3qhdl7t" path="res://assets/2.0/check.png" id="16_lhxs2"]
+[ext_resource type="PackedScene" uid="uid://ulne85i34evi" path="res://scenes/label_butt.tscn" id="17_vkqs7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36lhs"]
+size = Vector2(160, 224)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r7gn4"]
+size = Vector2(256, 144)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u5uof"]
+size = Vector2(256, 144)
+
+[node name="sport" type="Node2D"]
+script = ExtResource("1_4jf5y")
+
+[node name="TextureRect" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(0.9, 0.905556)
+texture = ExtResource("1_u24oi")
+metadata/_edit_use_anchors_ = true
+
+[node name="drop" type="Node2D" parent="."]
+
+[node name="drop" parent="drop" instance=ExtResource("2_rmspd")]
+position = Vector2(640, 360)
+id = 4
+
+[node name="CollisionShape2D" parent="drop/drop" index="0"]
+position = Vector2(0, 8)
+
+[node name="ЕкатеринаКарстен" type="Sprite2D" parent="drop/drop"]
+position = Vector2(0, 8)
+scale = Vector2(0.186667, 0.18)
+texture = ExtResource("6_ntqic")
+
+[node name="drop2" parent="drop" instance=ExtResource("2_rmspd")]
+position = Vector2(304, 264)
+id = 5
+
+[node name="CollisionShape2D" parent="drop/drop2" index="0"]
+position = Vector2(-64, -32)
+shape = SubResource("RectangleShape2D_36lhs")
+
+[node name="ВикторияАзаренко" type="Sprite2D" parent="drop/drop2"]
+position = Vector2(-64, -32)
+scale = Vector2(0.234261, 0.210938)
+texture = ExtResource("3_yqulj")
+
+[node name="drop3" parent="drop" instance=ExtResource("2_rmspd")]
+position = Vector2(1104, 264)
+id = 3
+
+[node name="CollisionShape2D" parent="drop/drop3" index="0"]
+position = Vector2(-64, -32)
+shape = SubResource("RectangleShape2D_36lhs")
+
+[node name="ВиталийЩербо" type="Sprite2D" parent="drop/drop3"]
+position = Vector2(-64.0001, -31.0262)
+scale = Vector2(0.258064, 0.236161)
+texture = ExtResource("4_dav8u")
+
+[node name="drop4" parent="drop" instance=ExtResource("2_rmspd")]
+position = Vector2(800, 184)
+id = 2
+
+[node name="CollisionShape2D" parent="drop/drop4" index="0"]
+position = Vector2(-8, 16)
+shape = SubResource("RectangleShape2D_r7gn4")
+
+[node name="ДарьяДомрачева" type="Sprite2D" parent="drop/drop4"]
+position = Vector2(-8, 16)
+scale = Vector2(0.13287, 0.133333)
+texture = ExtResource("5_es68c")
+
+[node name="drop5" parent="drop" instance=ExtResource("2_rmspd")]
+position = Vector2(480, 192)
+id = 1
+
+[node name="CollisionShape2D" parent="drop/drop5" index="0"]
+position = Vector2(16, 8)
+shape = SubResource("RectangleShape2D_u5uof")
+
+[node name="АлексейГришин" type="Sprite2D" parent="drop/drop5"]
+position = Vector2(16, 8)
+scale = Vector2(0.140969, 0.140625)
+texture = ExtResource("2_t63r5")
+
+[node name="drag" type="Node2D" parent="."]
+
+[node name="drag" parent="drag" instance=ExtResource("11_mvu34")]
+position = Vector2(288, 528)
+id = 1
+metadata/_edit_group_ = true
+
+[node name="ФФристайлГришин" type="Sprite2D" parent="drag/drag"]
+texture = ExtResource("11_hl86q")
+
+[node name="drag2" parent="drag" instance=ExtResource("11_mvu34")]
+position = Vector2(288, 424)
+id = 2
+metadata/_edit_group_ = true
+
+[node name="ФБиатлонДомрачева" type="Sprite2D" parent="drag/drag2"]
+texture = ExtResource("7_i0ct1")
+
+[node name="drag3" parent="drag" instance=ExtResource("11_mvu34")]
+position = Vector2(632, 504)
+id = 3
+metadata/_edit_group_ = true
+
+[node name="ФГимнастикаЩербо" type="Sprite2D" parent="drag/drag3"]
+texture = ExtResource("8_lpkvh")
+
+[node name="drag4" parent="drag" instance=ExtResource("11_mvu34")]
+position = Vector2(984, 528)
+id = 4
+metadata/_edit_group_ = true
+
+[node name="ФГребляКарстен" type="Sprite2D" parent="drag/drag4"]
+texture = ExtResource("9_8ktll")
+
+[node name="drag5" parent="drag" instance=ExtResource("11_mvu34")]
+position = Vector2(984, 424)
+id = 5
+metadata/_edit_group_ = true
+
+[node name="ФТеннисАзаренко" type="Sprite2D" parent="drag/drag5"]
+texture = ExtResource("10_7fxiw")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 936.0
+offset_top = 568.0
+offset_right = 1149.0
+offset_bottom = 644.0
+texture_normal = ExtResource("15_f7f2w")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 495.0
+offset_top = 556.0
+offset_right = 759.0
+offset_bottom = 662.0
+texture_normal = ExtResource("16_lhxs2")
+
+[node name="Label" parent="." instance=ExtResource("17_vkqs7")]
+offset_left = 480.0
+offset_top = 248.0
+offset_right = 739.0
+offset_bottom = 331.0
+path = "res://scenes/sport1.tscn"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+
+[editable path="drop/drop"]
+[editable path="drop/drop2"]
+[editable path="drop/drop3"]
+[editable path="drop/drop4"]
+[editable path="drop/drop5"]

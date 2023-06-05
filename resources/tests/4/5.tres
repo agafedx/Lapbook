@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://ccvex856rhku3"]
-
-[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_qf7b4"]
-
-[resource]
-script = ExtResource("1_qf7b4")
-text = "В 1792 г. в местечке Торговице был образован союз польских магнатов (Тарговицкая конфедерация), направленный против конституции 1791 г. Кто был назначен руководителем (маршалком) конфедерации?"
-answer = "Сапега"

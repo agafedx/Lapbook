@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://vnobebb3y53n"]
-
-[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_ugkew"]
-
-[resource]
-script = ExtResource("1_ugkew")
-text = "Что в переводе означает литвинское княжеское родовое имя Карибут (Корибут)?"
-answer = "воинственный"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuestionResource" load_steps=3 format=3 uid="uid://qepoajfspvbe"]
+
+[ext_resource type="Script" path="res://test_info.gd" id="1_plro6"]
+[ext_resource type="Texture2D" uid="uid://bip3xggn6kv4" path="res://assets/2.0/Замки/Тест/3/c1bd421a1e6497350a6fe6c0dccb0397.jpg" id="1_w37hj"]
+
+[resource]
+script = ExtResource("1_plro6")
+header = "Слава об этом замке разнеслась по всему миру благодаря историческому детективному роману Владимира Караткевича"
+q_image = ExtResource("1_w37hj")
+q_image_scale = Vector2(0.22, 0.22)
+q_question1 = "1. Мирский замок"
+q_question2 = "2. Кревский замок"
+q_question3 = "3. Несвижский замок"
+q_question4 = "4. Гольшанский замок"
+q_answer = 4

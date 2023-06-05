@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://b7a00x8cackux"]
-
-[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_gqrvo"]
-
-[resource]
-script = ExtResource("1_gqrvo")
-text = "Кто был главным руководителем польского восстания 1794 г., главной целью которого объявлялась борьба за суверенность Речи Посполитой?"
-answer = "Костюшко"

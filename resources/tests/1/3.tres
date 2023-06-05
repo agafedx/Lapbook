@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://bieuo0vlsd305"]
-
-[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_h8vcj"]
-
-[resource]
-script = ExtResource("1_h8vcj")
-text = "В каком году, согласно легенде, киевская княгиня Ольга основала Витебск?"
-answer = "974"

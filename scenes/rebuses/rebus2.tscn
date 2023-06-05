@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bx5ekr1i0uqpa"]
-
-[ext_resource type="PackedScene" uid="uid://vij7deigdiea" path="res://scenes/rebus.tscn" id="1_ecc0o"]
-
-[node name="rebus" instance=ExtResource("1_ecc0o")]
-offset_right = 5760.0
-offset_bottom = 3240.0
-id = 1

@@ -1,17 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://bt3b5xm64kc7v"]
+[gd_scene load_steps=7 format=3 uid="uid://bt3b5xm64kc7v"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_5yqxo"]
-[ext_resource type="Texture2D" uid="uid://dsl4mp3p4b8qp" path="res://assets/history.jpg" id="2_kck7g"]
-[ext_resource type="Texture2D" uid="uid://c2qfot2n6n2c1" path="res://assets/history_hover.jpg" id="3_vphi1"]
-[ext_resource type="Texture2D" uid="uid://dbienm4gayg02" path="res://assets/rebus.jpg" id="4_6ecjo"]
-[ext_resource type="Texture2D" uid="uid://bx7s1xfu75my6" path="res://assets/krossvord.jpg" id="5_afity"]
-[ext_resource type="Texture2D" uid="uid://demrowxsiwscs" path="res://assets/rebus_hover.jpg" id="5_s5ham"]
-[ext_resource type="Texture2D" uid="uid://btk0bukt3opoh" path="res://assets/test.jpg" id="6_xb3c2"]
-[ext_resource type="Texture2D" uid="uid://dmn0nq8wacr3t" path="res://assets/krossvord_hover.jpg" id="7_dcrvj"]
-[ext_resource type="Texture2D" uid="uid://ckt8tugs4bjrb" path="res://assets/test_hover.jpg" id="9_c88vb"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_q1smt"]
-font_size = 32
+[ext_resource type="Texture2D" uid="uid://b3pcou8t2gghw" path="res://assets/2.0/ДЫПЛОМ/катинки/Фон.png" id="2_osyej"]
+[ext_resource type="Texture2D" uid="uid://cgstou31jypen" path="res://assets/2.0/ДЫПЛОМ/катинки/Меню_Замки копия.png" id="3_8nujc"]
+[ext_resource type="Texture2D" uid="uid://csobqn7qhcn5m" path="res://assets/2.0/ДЫПЛОМ/катинки/Меню_Памятники копия.png" id="4_ncrgo"]
+[ext_resource type="Texture2D" uid="uid://y2mqx2ugnkc4" path="res://assets/2.0/ДЫПЛОМ/катинки/Меню_Спортики копия.png" id="5_be0ne"]
+[ext_resource type="Texture2D" uid="uid://chqpewqf6ms3i" path="res://assets/2.0/ДЫПЛОМ/катинки/Меню_Столицы копия.png" id="6_uycww"]
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -30,114 +24,72 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="Panel"]
+[node name="TextureRect" type="TextureRect" parent="Panel"]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -166.0
-offset_top = 27.0
-offset_right = 185.0
-offset_bottom = 123.0
-grow_horizontal = 2
-text = "Лэпбук
-\"Знай свою историю\""
-label_settings = SubResource("LabelSettings_q1smt")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TextureButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 755.0
-offset_top = 135.0
-offset_right = 1779.0
-offset_bottom = 901.0
-scale = Vector2(0.3, 0.3)
-texture_normal = ExtResource("2_kck7g")
-texture_hover = ExtResource("3_vphi1")
-
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 838.0
-offset_top = 238.0
-offset_right = 974.0
-offset_bottom = 269.0
-text = "ИСТОРИЯ"
-
-[node name="TextureButton2" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 86.0
-offset_top = 158.0
-offset_right = 837.0
-offset_bottom = 496.0
-scale = Vector2(0.5, 0.5)
-texture_normal = ExtResource("4_6ecjo")
-texture_hover = ExtResource("5_s5ham")
-
-[node name="Button2" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -347.0
-offset_top = -100.0
-offset_right = -270.0
-offset_bottom = -69.0
+anchors_preset = -1
+anchor_top = 0.0015432
+anchor_right = 1.0
+anchor_bottom = 1.00154
+offset_top = -0.999996
+offset_right = 128.0
+offset_bottom = 71.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "РЕБУСЫ"
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_osyej")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.611111
+anchor_top = 0.141975
+anchor_right = 0.760069
+anchor_bottom = 0.862994
+offset_right = 48.4
+offset_bottom = 131.78
+scale = Vector2(0.78, 0.78)
+texture_normal = ExtResource("3_8nujc")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.229167
+anchor_top = 0.141975
+anchor_right = 0.385573
+anchor_bottom = 0.865401
+offset_right = 50.82
+offset_bottom = 132.22
+scale = Vector2(0.78, 0.78)
+texture_normal = ExtResource("4_ncrgo")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton3" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 159.0
-offset_top = 364.0
-offset_right = 1183.0
-offset_bottom = 1388.0
-scale = Vector2(0.2, 0.2)
-texture_normal = ExtResource("5_afity")
-texture_hover = ExtResource("7_dcrvj")
-
-[node name="Button3" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -378.0
-offset_top = 131.0
-offset_right = -270.0
-offset_bottom = 162.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "КРОССВОРД
-"
+anchor_left = 0.420139
+anchor_top = 0.138889
+anchor_right = 0.577222
+anchor_bottom = 0.865926
+offset_right = 51.04
+offset_bottom = 132.88
+scale = Vector2(0.78, 0.78)
+texture_normal = ExtResource("5_be0ne")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton4" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 762.0
-offset_top = 393.0
-offset_right = 2262.0
-offset_bottom = 1393.0
-scale = Vector2(0.2, 0.2)
-texture_normal = ExtResource("6_xb3c2")
-texture_hover = ExtResource("9_c88vb")
-
-[node name="Button4" type="Button" parent="."]
-layout_mode = 0
-offset_left = 895.0
-offset_top = 474.0
-offset_right = 941.0
-offset_bottom = 505.0
-text = "ТЕСТ"
+anchor_left = 0.802083
+anchor_top = 0.146605
+anchor_right = 0.957813
+anchor_bottom = 0.871235
+offset_right = 50.6
+offset_bottom = 132.44
+scale = Vector2(0.78, 0.78)
+texture_normal = ExtResource("6_uycww")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="TextureButton3" to="." method="_on_texture_button_3_pressed"]
-[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="TextureButton4" to="." method="_on_texture_button_4_pressed"]
-[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

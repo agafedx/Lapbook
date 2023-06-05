@@ -1,41 +1,45 @@
 extends Control
-var id : int = 0
-var test_q : PackedScene = preload("res://scenes/test_question.tscn")
-var t : Timer
-var n : int = 0
+@export var test : Resource
+var current : int
 func _ready():
-	id = GameControl.current_tst
-	add_test()
+	$Label.text = test.header
+	$Label2.text = test.q_question1
+	$Label3.text = test.q_question2
+	$Label4.text = test.q_question3
+	$Label5.text = test.q_question4
+	$Sprite2D.texture = test.q_image
+	$Sprite2D.scale = test.q_image_scale
 
-func add_test():
-	var z = GameControl.tests[id]
-	for i in 5:
-		var x = test_q.instantiate()
-		x.test = z.test[i]
-		%tests.add_child(x)
-		x.connect("start_check",start_check)
-func start_check():
-	var b : bool = true
-	for i in %tests.get_children():
-		b = i.check()
-	if b:
-		if $Label2.text=="Завершён":
-			return 
-		else:
-			t = Timer.new()
-			add_child(t)
-			t.wait_time = 0.1
-			t.connect("timeout",t_timeout)
-			t.start()
+func _on_check_box_toggled(_button_pressed):
+	current = 1
+	change_state()
 
-func t_timeout():
-	if $Label2.text!="Завершён":
-		$Label2.text+="Завершён"[n]
-		n+=1
-	else:
-		t.stop()
-		t.queue_free()
+func _on_check_box_2_toggled(_button_pressed):
+	current = 2
+	change_state()
 
+func _on_check_box_3_toggled(_button_pressed):
+	current = 3
+	change_state()
 
-func _on_main_pressed():
-	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+func _on_check_box_4_toggled(_button_pressed):
+	current = 4
+	change_state()
+
+func change_state():
+	if current == 1:
+		$CheckBox2.button_pressed=false
+		$CheckBox3.button_pressed=false
+		$CheckBox4.button_pressed=false
+	elif current == 2:
+		$CheckBox.button_pressed=false
+		$CheckBox3.button_pressed=false
+		$CheckBox4.button_pressed=false
+	elif current == 3:
+		$CheckBox2.button_pressed=false
+		$CheckBox.button_pressed=false
+		$CheckBox4.button_pressed=false
+	elif current == 4:
+		$CheckBox2.button_pressed=false
+		$CheckBox.button_pressed=false
+		$CheckBox3.button_pressed=false

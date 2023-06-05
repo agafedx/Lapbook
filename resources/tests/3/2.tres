@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="TestResource" load_steps=2 format=3 uid="uid://of4ku3ra8g2n"]
-
-[ext_resource type="Script" path="res://scripts/test_resource.gd" id="1_fusju"]
-
-[resource]
-script = ExtResource("1_fusju")
-text = "Какое имя получил великий князь литовский Витовт при католическом крещении?"
-answer = "Александр"

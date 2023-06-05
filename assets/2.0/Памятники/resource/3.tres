@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MemoRes" load_steps=4 format=3 uid="uid://d0xa1u32hauq"]
+
+[ext_resource type="Script" path="res://memo_test_info.gd" id="1_akdnq"]
+[ext_resource type="Texture2D" uid="uid://bhcnt7k3e8yg6" path="res://assets/2.0/Памятники/памятники3/Барышня с зонтиком.jpg" id="1_in4ky"]
+[ext_resource type="Texture2D" uid="uid://ckyn0csdteoou" path="res://assets/2.0/Памятники/памятники3/Памятник князю Олегерду(в).jpg" id="2_k62g0"]
+
+[resource]
+script = ExtResource("1_akdnq")
+text = "Какой и зпамятников возведен в Витебске?"
+correct = 2
+image1 = ExtResource("1_in4ky")
+image2 = ExtResource("2_k62g0")

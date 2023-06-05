@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dixauy6rh3bbt"
+path="res://.godot/imported/памятник 1000-летию Бреста(в).jpg-f662ef55361b1ecc4dc5909acd5e05b8.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://assets/2.0/Памятники/памятники2/памятник 1000-летию Бреста(в).jpg"
+dest_files=["res://.godot/imported/памятник 1000-летию Бреста(в).jpg-f662ef55361b1ecc4dc5909acd5e05b8.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

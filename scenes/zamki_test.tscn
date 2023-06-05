@@ -1,0 +1,46 @@
+[gd_scene load_steps=11 format=3 uid="uid://kq6b2curwveb"]
+
+[ext_resource type="Script" path="res://scripts/zamki_test.gd" id="1_gftcl"]
+[ext_resource type="Resource" uid="uid://du3bgl2ut5irf" path="res://assets/2.0/Замки/resource/1.tres" id="2_duvka"]
+[ext_resource type="Resource" uid="uid://oee6osivobr3" path="res://assets/2.0/Замки/resource/2.tres" id="3_fnp63"]
+[ext_resource type="Resource" uid="uid://qepoajfspvbe" path="res://assets/2.0/Замки/resource/3.tres" id="4_155wp"]
+[ext_resource type="Resource" uid="uid://cc6xp60q3ntl4" path="res://assets/2.0/Замки/resource/4.tres" id="5_2qc61"]
+[ext_resource type="PackedScene" uid="uid://ulne85i34evi" path="res://scenes/label_butt.tscn" id="5_qlmkr"]
+[ext_resource type="Resource" uid="uid://oq6y88n4ml4x" path="res://assets/2.0/Замки/resource/5.tres" id="6_0qgeb"]
+[ext_resource type="Texture2D" uid="uid://b3pcou8t2gghw" path="res://assets/2.0/ДЫПЛОМ/катинки/Фон.png" id="7_tqof3"]
+[ext_resource type="Texture2D" uid="uid://dsiyignwxx75e" path="res://assets/2.0/меню.png" id="8_lvug4"]
+[ext_resource type="Texture2D" uid="uid://c7qhex3qhdl7t" path="res://assets/2.0/check.png" id="9_514s5"]
+
+[node name="zamki_test" type="Node2D"]
+script = ExtResource("1_gftcl")
+tests = Array[Resource]([ExtResource("2_duvka"), ExtResource("3_fnp63"), ExtResource("4_155wp"), ExtResource("5_2qc61"), ExtResource("6_0qgeb")])
+
+[node name="TextureRect" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(0.9, 0.905556)
+texture = ExtResource("7_tqof3")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 936.0
+offset_top = 568.0
+offset_right = 1149.0
+offset_bottom = 644.0
+texture_normal = ExtResource("8_lvug4")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 495.0
+offset_top = 556.0
+offset_right = 759.0
+offset_bottom = 662.0
+texture_normal = ExtResource("9_514s5")
+
+[node name="Label" parent="." instance=ExtResource("5_qlmkr")]
+offset_left = 472.0
+offset_top = 280.0
+offset_right = 731.0
+offset_bottom = 363.0
+path = "res://scenes/main_menu.tscn"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]

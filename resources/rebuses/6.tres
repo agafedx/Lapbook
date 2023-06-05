@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="RebusData" load_steps=3 format=3 uid="uid://bmy0doqeja0an"]
-
-[ext_resource type="Script" path="res://scripts/rebus_data.gd" id="1_xoe6s"]
-[ext_resource type="Texture2D" uid="uid://7wnp8ks8k2ul" path="res://assets/NKdUq4e6JuY.jpg" id="2_0ak50"]
-
-[resource]
-script = ExtResource("1_xoe6s")
-texture = ExtResource("2_0ak50")
-text = "витовт"

@@ -1,0 +1,86 @@
+[gd_scene load_steps=19 format=3 uid="uid://bw1cq6aedtpkw"]
+
+[ext_resource type="Texture2D" uid="uid://b2fqack6jceyx" path="res://assets/2.0/Памятники/памятники7/moskvich-407(в).jpg" id="1_pccj0"]
+[ext_resource type="Script" path="res://scripts/memo.gd" id="1_s6c0e"]
+[ext_resource type="FontFile" uid="uid://daexgdpsrdjxi" path="res://assets/2.0/ofont.ru_Calypso.ttf" id="1_y8axe"]
+[ext_resource type="Resource" uid="uid://bbrhkouj1mbix" path="res://assets/2.0/Памятники/resource/1.tres" id="2_71v3w"]
+[ext_resource type="Texture2D" uid="uid://b3pcou8t2gghw" path="res://assets/2.0/ДЫПЛОМ/катинки/Фон.png" id="2_tgdix"]
+[ext_resource type="Texture2D" uid="uid://rqaqnt7rf8ix" path="res://assets/2.0/Памятники/памятники1/Памятник освобождения Бреста.jpg" id="2_txwmy"]
+[ext_resource type="Resource" uid="uid://dpqti5w083wr5" path="res://assets/2.0/Памятники/resource/2.tres" id="3_ucvn7"]
+[ext_resource type="Resource" uid="uid://d0xa1u32hauq" path="res://assets/2.0/Памятники/resource/3.tres" id="4_k4iay"]
+[ext_resource type="PackedScene" uid="uid://ulne85i34evi" path="res://scenes/label_butt.tscn" id="5_2bn8p"]
+[ext_resource type="Resource" uid="uid://bqy8aw7btpvrl" path="res://assets/2.0/Памятники/resource/4.tres" id="5_aqk6j"]
+[ext_resource type="Resource" uid="uid://ddqrylphlnceg" path="res://assets/2.0/Памятники/resource/5.tres" id="6_kqc5d"]
+[ext_resource type="Texture2D" uid="uid://dsiyignwxx75e" path="res://assets/2.0/меню.png" id="7_barer"]
+[ext_resource type="Resource" uid="uid://b0222sslh3u2s" path="res://assets/2.0/Памятники/resource/6.tres" id="7_lc4rk"]
+[ext_resource type="Resource" uid="uid://cg7hgdsoqc24o" path="res://assets/2.0/Памятники/resource/7.tres" id="8_rwoly"]
+[ext_resource type="Resource" uid="uid://dprqydju43te3" path="res://assets/2.0/Памятники/resource/8.tres" id="9_pw4h6"]
+[ext_resource type="Resource" uid="uid://4vxswfe0ootp" path="res://assets/2.0/Памятники/resource/9.tres" id="10_igwtk"]
+[ext_resource type="Resource" uid="uid://bdop0jxd2s6h5" path="res://assets/2.0/Памятники/resource/10.tres" id="11_not2e"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_io1or"]
+font = ExtResource("1_y8axe")
+font_size = 32
+font_color = Color(0.0588235, 0.0588235, 0.0588235, 1)
+
+[node name="memo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s6c0e")
+test = Array[Resource]([ExtResource("2_71v3w"), ExtResource("3_ucvn7"), ExtResource("4_k4iay"), ExtResource("5_aqk6j"), ExtResource("6_kqc5d"), ExtResource("7_lc4rk"), ExtResource("8_rwoly"), ExtResource("9_pw4h6"), ExtResource("10_igwtk"), ExtResource("11_not2e")])
+
+[node name="TextureRect" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(0.9, 0.905556)
+texture = ExtResource("2_tgdix")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 256.0
+offset_right = 860.0
+offset_bottom = 723.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("1_pccj0")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 256.0
+offset_right = 1340.0
+offset_bottom = 723.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("2_txwmy")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 256.0
+offset_top = 104.0
+offset_right = 1024.0
+offset_bottom = 174.0
+text = "asdasdasdasdsadasdasdasdasasdasdasdasdasddasdasdasd"
+label_settings = SubResource("LabelSettings_io1or")
+autowrap_mode = 3
+
+[node name="Label2" parent="." instance=ExtResource("5_2bn8p")]
+layout_mode = 1
+offset_left = -120.0
+offset_top = -12.0
+offset_right = 139.0
+offset_bottom = 71.0
+path = "res://scenes/main_menu.tscn"
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+offset_left = 936.0
+offset_top = 568.0
+offset_right = 1149.0
+offset_bottom = 644.0
+texture_normal = ExtResource("7_barer")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_texture_button_3_pressed"]
